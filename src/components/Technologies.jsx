@@ -1,11 +1,14 @@
-import React from "react";
 import { RiReactjsLine } from "react-icons/ri";
-import { TbBrandNextjs } from "react-icons/tb";
-import { SiUml } from "react-icons/si";
+import { SiApachecassandra } from "react-icons/si";
+import { SiSpring } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
+import { FaAws } from "react-icons/fa";
+import { FaDocker } from "react-icons/fa";
+import { DiRedis } from "react-icons/di";
+import { RiJavascriptLine } from "react-icons/ri";
 import { AiOutlinePython } from "react-icons/ai";
 import { FaNodeJs } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
-import { TbCloudComputing } from "react-icons/tb";
 import { BiLogoTypescript } from "react-icons/bi";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaLinux } from "react-icons/fa";
@@ -66,6 +69,22 @@ const Technologies = () => {
         >
           <BiLogoTypescript className="text-7xl text-blue-800" />
         </motion.div>
+                <motion.div
+          variants={iconVariants(3)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiApachecassandra className="text-7xl text-gray-800" />
+        </motion.div>
+                <motion.div
+          variants={iconVariants(3)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <DiRedis className="text-7xl text-red-800" />
+        </motion.div>
         <motion.div
           variants={iconVariants(2)}
           initial="initial"
@@ -74,13 +93,13 @@ const Technologies = () => {
         >
           <RiTailwindCssFill className="text-7xl text-cyan-400" />
         </motion.div>
-        <motion.div
+                <motion.div
           variants={iconVariants(3)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <TbCloudComputing className="text-7xl" />
+          <FaDocker className="text-7xl text-blue-500"/>
         </motion.div>
         <motion.div
           variants={iconVariants(2)}
@@ -88,15 +107,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <FaLinux className="text-7xl text-black" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(3)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <TbBrandNextjs className="text-7xl" />
+          <FaLinux className="text-7xl text-gray-600" />
         </motion.div>
         <motion.div
           variants={iconVariants(2)}
@@ -104,7 +115,15 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiUml className="text-7xl text-black" />
+          <SiSpring className="text-7xl text-green-400" />
+        </motion.div>
+                <motion.div
+          variants={iconVariants(2)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <RiJavascriptLine className="text-7xl text-yellow-300" />
         </motion.div>
         <motion.div
           variants={iconVariants(3)}
@@ -114,6 +133,14 @@ const Technologies = () => {
         >
           <AiOutlinePython className="text-7xl text-yellow-500" />
         </motion.div>
+                <motion.div
+          variants={iconVariants(3)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiMongodb className="text-7xl text-green-500" />
+        </motion.div>
         <motion.div
           variants={iconVariants(2)}
           initial="initial"
@@ -121,6 +148,14 @@ const Technologies = () => {
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
           <FaNodeJs className="text-7xl text-green-500" />
+        </motion.div>
+                <motion.div
+          variants={iconVariants(2)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <FaAws className="text-7xl text-orange-500" />
         </motion.div>
         <motion.div
           variants={iconVariants(3)}

@@ -25,9 +25,7 @@ const Projects = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                height={120}
-                width={120}
-                className="mb-6 rounded"
+                className="mb-8 h-48 w-48 object-cover rounded"
               />
             </div>
             <div className="w-full max-w-xl lg:w-3/4">
@@ -40,7 +38,7 @@ const Projects = () => {
               {project.technologies.map((tech, index) => (
                 <span
                   key={index}
-                  className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-pink-900"
+                  className="mr-2 rounded bg-neutral-900 px-3 py-1 font-medium text-pink-900 whitespace-nowrap"
                 >
                   {tech}
                 </span>

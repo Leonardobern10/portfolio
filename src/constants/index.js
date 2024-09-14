@@ -2,21 +2,57 @@ import project1 from "../assets/projects/Ralph.webp";
 import project2 from "../assets/projects/lista-tarefa.jpeg";
 import project3 from "../assets/projects/jogo-memoria.webp";
 import project4 from "../assets/projects/jogo-velha.jpg";
+import project8 from "../assets/projects/2023-porsche-911-carrera-t-in-gulf-blue.webp";
+import project9 from "../assets/projects/artigo-F1-novo-2.jpg";
+import project10 from "../assets/projects/IF-Futebol.webp";
+import project11 from "../assets/projects/Link_pra_pagina_principal_da_Wikipedia-PT_em_codigo_QR_b.svg.webp";
 /*import project5 from "../assets/projects/clima-image.jpeg";*/
 import project6 from "../assets/projects/analise-de-dados.jpeg";
 import project7 from "../assets/projects/analise-e-commerce.jpeg";
 
-export const HERO_CONTENT = `Sou um desenvolvedor de software apaixonado e estudante de graduação em Ciência da Computação, com talento para criar aplicações robustas e escaláveis. Através dos meus projetos, aperfeiçoei minhas habilidades em tecnologias de front-end como React e Next.js, bem como em tecnologias de back-end como Java, Node.js, PostgreSQL e MySQL. Além disso, possuo conhecimentos em cloud computing com Azure. Meu objetivo é aproveitar minha experiência, evoluindo continuamente em diversos temas, para criar soluções inovadoras que impulsionem o crescimento dos negócios e proporcionem influências significativas na vida das pessoas, tornando suas experiências mais agradáveis.`;
+export const HERO_CONTENT = `Sou estudante de graduação em Engenharia de Software, com talento para criar aplicações robustas e escaláveis. Através dos meus projetos, aperfeiçoei minhas habilidades em tecnologias de front-end, mas com uma aptidão maior para tecnologias de back-end como Java, Node.js. Meu objetivo é aproveitar minha experiência, evoluindo continuamente em diversos temas, para criar soluções inovadoras que impulsionem o crescimento dos negócios e proporcionem influências significativas na vida das pessoas, tornando suas experiências mais agradáveis.`;
 
-export const ABOUT_TEXT = `Sou um desenvolvedor full stack dedicado e versátil, apaixonado por criar aplicações web eficientes e amigáveis. Apesar de estar no início da minha carreira, possuo um sólido domínio de diversas tecnologias essenciais, incluindo Java, JavaScript, Python e bancos de dados relacionais como PostgreSQL. Também tenho experiência com React, Next.js, TypeScript, Node.js e Spring Framework. 
-  
-  Minha formação em Ciência da Computação proporcionou-me conhecimentos abrangentes em engenharia de software, modelagem em UML, redes de computadores, segurança cibernética, computação em nuvem, estrutura de dados e sistemas operacionais, com especial ênfase em Linux. Desde o início da minha jornada no desenvolvimento de software, fui impulsionado por uma curiosidade profunda sobre o funcionamento interno das tecnologias, buscando constantemente aprender e adaptar-me a novos desafios.
-  
-  Tenho uma habilidade natural para resolver problemas complexos de forma criativa, sempre em busca de entregar soluções de alta qualidade. Valorizo o trabalho em equipe e prospero em ambientes colaborativos, onde posso contribuir com minha capacidade analítica e minha paixão por inovação tecnológica.
-  
-  Além do meu compromisso com o desenvolvimento de software, mantenho-me ativo explorando novas tecnologias e contribuindo para projetos de código aberto. Estou entusiasmado com a oportunidade de aplicar meus conhecimentos e energia para ajudar sua empresa a alcançar novos patamares de excelência tecnológica.`;
+export const ABOUT_TEXT = `Um Engenheiro de Software dedicado e versátil, apaixonado pelo que faço, gosto de desafios e, principalmente, resolvê-los. Procuro sempre me aprofundar nos conceitos fundamentais que regem as tecnologias aos quais trabalho e, em diversas outras tecnologias a nivel de curiosidade. Minhas áreas de maior destaque são aplicações com Java, JavaScript e bancos de dados como PostgreSQL, MongoDB, CassandraDB e Redis. Também tenho experiência com React, TypeScript, Node.js e Spring Framework (Spring Security, Spring Web, Spring Data JPA).`;
 
 export const PROJECTS = [
+  {
+    title: "Car Management API",
+    image: project8,
+    description:
+      "O projeto Car Management API é uma aplicação desenvolvida com Spring Boot que fornece uma API RESTful para gerenciamento de carros. A API permite realizar operações CRUD em registros de carros, além de suportar pesquisa e filtragem por diferentes atributos. O projeto possui sistema de autenticação e é configurado para usar MongoDB e PostgreSQL para armazenamento de dados.",
+    technologies: [
+      "Java",
+      "Spring Framework",
+      "PostgreSQL",
+      "Spring Security",
+      "MongoDB",
+    ],
+    url: "https://github.com/Leonardobern10/Car-management-api",
+  },
+  {
+    title: "Fórmula 1 API",
+    image: project9,
+    description:
+      "Este projeto é uma API desenvolvida com Fastify e TypeScript, que fornece informações sobre equipes e pilotos de Fórmula 1. A API é capaz de listar todos os times e pilotos, bem como detalhes específicos sobre cada piloto.",
+    technologies: ["Node.js", "Fastify", "Typescript", "CORS"],
+    url: "https://github.com/Leonardobern10/Projeto-formula1-api",
+  },
+  {
+    title: "Soccer API",
+    image: project10,
+    description:
+      "Este projeto é uma API desenvolvida em TypeScript usando Express.js para gerenciar informações relacionadas a clubes e jogadores de futebol. A API fornece endpoints para realizar operações CRUD (Create, Read, Update, Delete) em jogadores e clubes, utilizando serviços e repositórios para separar a lógica de negócio da interação com os dados.",
+    technologies: ["Node.js", "API RESTful", "Express.js", "Typescript"],
+    url: "https://github.com/Leonardobern10/Projeto-start-clubs",
+  },
+  {
+    title: "Gerador de senhas e QR-CODE",
+    image: project11,
+    description:
+      "Este projeto é uma aplicação simples em Node.js que oferece duas ferramentas úteis: um gerador de QR Code e um gerador de senhas. O objetivo é fornecer uma interface de linha de comando interativa para gerar QR Codes a partir de links e criar senhas seguras com base em preferências definidas pelo usuário.",
+    technologies: ["Node.js", "Prompt", "Chalk", "Qr-code terminal"],
+    url: "https://github.com/Leonardobern10/Projeto-gerador-qrcode",
+  },
   {
     title: "Jogo Detona Ralph",
     image: project1,
