@@ -9,10 +9,11 @@ import project11 from "../assets/projects/Link_pra_pagina_principal_da_Wikipedia
 /*import project5 from "../assets/projects/clima-image.jpeg";*/
 import project6 from "../assets/projects/analise-de-dados.jpeg";
 import project7 from "../assets/projects/analise-e-commerce.jpeg";
+import project12 from "../assets/projects/bn4ebvtt.bmp";
 
 export const HERO_CONTENT = `Sou estudante de graduação em Engenharia de Software, com talento para criar aplicações robustas e escaláveis. Através dos meus projetos, aperfeiçoei minhas habilidades em tecnologias de front-end, mas com uma aptidão maior para tecnologias de back-end como Java, Node.js. Meu objetivo é aproveitar minha experiência, evoluindo continuamente em diversos temas, para criar soluções inovadoras que impulsionem o crescimento dos negócios e proporcionem influências significativas na vida das pessoas, tornando suas experiências mais agradáveis.`;
 
-export const ABOUT_TEXT = `Um Engenheiro de Software dedicado e versátil, apaixonado pelo que faço, gosto de desafios e, principalmente, resolvê-los. Procuro sempre me aprofundar nos conceitos fundamentais que regem as tecnologias aos quais trabalho e, em diversas outras tecnologias a nivel de curiosidade. Minhas áreas de maior destaque são aplicações com Java, JavaScript e bancos de dados como PostgreSQL, MongoDB, CassandraDB e Redis. Também tenho experiência com React, TypeScript, Node.js e Spring Framework (Spring Security, Spring Web, Spring Data JPA).`;
+export const ABOUT_TEXT = `Dedicado, versátil e apaixonado pelo que faço, gosto de desafios e, principalmente, resolvê-los. Procuro sempre me aprofundar nos conceitos fundamentais que regem as tecnologias aos quais trabalho e em diversas outras tecnologias a nivel de curiosidade. Minhas áreas de maior destaque são aplicações com Java, JavaScript e bancos de dados como PostgreSQL, MongoDB, CassandraDB, Neo4J e Redis; além da utilização de mensagerias, como RabbitMQ com o protocolo AMQP, para criação de microserviços. Também tenho experiência com React, TypeScript, Nodejs e Spring Framework (Spring Security, Spring Web, Spring Data JPA).`;
 
 export const PROJECTS = [
   {
@@ -28,6 +29,14 @@ export const PROJECTS = [
       "MongoDB",
     ],
     url: "https://github.com/Leonardobern10/Car-management-api",
+  },
+  {
+    title: "Order Management",
+    image: project12,
+    description:
+      "Este projeto é um sistema de gerenciamento de pedidos de uma loja de papelaria, composto por três microsserviços que se comunicam utilizando RabbitMQ. A arquitetura é orientada a eventos, onde os pedidos são criados, processados e notificados através de um sistema distribuído de mensageria.",
+    technologies: ["Java", "Spring Boot", "RabbitMQ"],
+    url: "https://github.com/Leonardobern10/OrderManagement",
   },
   {
     title: "Fórmula 1 API",
@@ -125,7 +134,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "Nova Iguaçú, RJ, Brasil ",
+  address: "Nova Iguaçu, RJ, Brasil",
   phoneNo: "+55 21 9 9942-9912 ",
   email: "leonardo.bernardo2658@gmail.com",
 };
