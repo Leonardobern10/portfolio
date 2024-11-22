@@ -12,9 +12,9 @@ Este é o repositório do meu portfólio pessoal, onde apresento meus projetos, 
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Frontend**: HTML, CSS, JavaScript, [adicione frameworks ou bibliotecas utilizadas, como React, Vite, etc.]
-- **Styling**: [Se utilizou alguma biblioteca de estilização, como Tailwind CSS, Sass, etc.]
-- **Outras Ferramentas**: [Liste outras ferramentas relevantes, como animações, ícones, etc.]
+- **Frontend**: HTML, CSS, JavaScript, React.
+- **Styling**: TailwindCSS.
+- **Outras Ferramentas**: Framer-Motion.
 
 ## 📦 Estrutura do Projeto
 
@@ -58,8 +58,6 @@ portfolio/
 ## 📚 Habilidades Abordadas
 
 - Desenvolvimento web responsivo
-- Integração com APIs externas (se aplicável)
-- [Outras habilidades demonstradas pelo projeto]
 
 ## 🤝 Contribuição
 
