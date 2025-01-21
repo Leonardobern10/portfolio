@@ -13,6 +13,7 @@ import { BiLogoTypescript } from "react-icons/bi";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaLinux } from "react-icons/fa";
 import { FaJava } from "react-icons/fa";
+import { SiMysql } from "react-icons/si";
 import { motion } from "framer-motion";
 
 const iconVariants = (duration) => ({
@@ -43,7 +44,7 @@ const Technologies = () => {
         whileInView={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: -100 }}
         transition={{ duration: 1.5 }}
-        className="flex flex-wrap items-center justify-center gap-10"
+        className="flex flex-wrap items-center justify-center gap-10 w-screen max-w-7xl mx-auto"
       >
         <motion.div
           variants={iconVariants(3)}
@@ -69,7 +70,7 @@ const Technologies = () => {
         >
           <BiLogoTypescript className="text-7xl text-blue-800" />
         </motion.div>
-                <motion.div
+        <motion.div
           variants={iconVariants(3)}
           initial="initial"
           animate="animate"
@@ -77,7 +78,7 @@ const Technologies = () => {
         >
           <SiApachecassandra className="text-7xl text-gray-800" />
         </motion.div>
-                <motion.div
+        <motion.div
           variants={iconVariants(3)}
           initial="initial"
           animate="animate"
@@ -86,20 +87,12 @@ const Technologies = () => {
           <DiRedis className="text-7xl text-red-800" />
         </motion.div>
         <motion.div
-          variants={iconVariants(2)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <RiTailwindCssFill className="text-7xl text-cyan-400" />
-        </motion.div>
-                <motion.div
           variants={iconVariants(3)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <FaDocker className="text-7xl text-blue-500"/>
+          <FaDocker className="text-7xl text-blue-500" />
         </motion.div>
         <motion.div
           variants={iconVariants(2)}
@@ -107,7 +100,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <FaLinux className="text-7xl text-gray-600" />
+          <SiMysql className="text-7xl text-gray-600" />
         </motion.div>
         <motion.div
           variants={iconVariants(2)}
@@ -117,7 +110,7 @@ const Technologies = () => {
         >
           <SiSpring className="text-7xl text-green-400" />
         </motion.div>
-                <motion.div
+        <motion.div
           variants={iconVariants(2)}
           initial="initial"
           animate="animate"
@@ -133,7 +126,7 @@ const Technologies = () => {
         >
           <AiOutlinePython className="text-7xl text-yellow-500" />
         </motion.div>
-                <motion.div
+        <motion.div
           variants={iconVariants(3)}
           initial="initial"
           animate="animate"
@@ -148,14 +141,6 @@ const Technologies = () => {
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
           <FaNodeJs className="text-7xl text-green-500" />
-        </motion.div>
-                <motion.div
-          variants={iconVariants(2)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <FaAws className="text-7xl text-orange-500" />
         </motion.div>
         <motion.div
           variants={iconVariants(3)}
