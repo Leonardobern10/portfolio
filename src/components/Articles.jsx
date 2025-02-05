@@ -15,22 +15,22 @@ const Articles = () => {
   }, []);
 
   return (
-    <div className="pb-20 px-4">
+    <div className="pb-12 px-4">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
         className="my-20 text-center text-4xl"
       >
-        Articles
+        Artigos
       </motion.h2>
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-3">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-3">
         {data.map((article, index) => (
           <motion.div
             whileInView={{ opacity: 1, x: 0 }}
-            initial={{ opacity: 0, x: -100 }}
-            transition={{ duration: 1.5 }}
-            className="my-20 flex text-justify text-2xl"
+            initial={{ opacity: 0, x: 100 }}
+            transition={{ duration: 1.0 }}
+            className="my-8 flex text-center text-2xl"
           >
             <div
               className="border-4 rounded-md overflow-hidden shadow-lg border-neutral-800"

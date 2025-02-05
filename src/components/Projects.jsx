@@ -33,16 +33,20 @@ const Projects = () => {
                 <a href={project.url} target="_blank" rel="noopener noreferrer">
                   {project.title}
                 </a>
-                </h6>
-              <p className="mb-4 text-neutral-400">{project.description}</p>
-              {project.technologies.map((tech, index) => (
-                <span
-                  key={index}
-                  className="mr-2 rounded bg-neutral-900 px-3 py-1 font-medium text-pink-900 whitespace-nowrap"
-                >
-                  {tech}
-                </span>
-              ))}
+              </h6>
+              <p className="mb-4 text-justify text-neutral-400">
+                {project.description}
+              </p>
+              <div className="flex flex-row flex-wrap justify-start w-full">
+                {project.technologies.map((tech, index) => (
+                  <span
+                    key={index}
+                    className="w-fit m-2 rounded bg-neutral-900 px-3 py-1 font-medium text-pink-900 whitespace-nowrap"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
             </div>
           </motion.div>
         ))}
