@@ -26,11 +26,11 @@ const About = function () {
           transition={{ duration: 0.5 }}
           className="w-full lg:w-1/2"
         >
-          <div className="flex-col justify-center items-center mr-10">
-            <h3 className="my-2 max-w-xl py-2 px-0 font-light text-3xl flex-row">
-              <p className="font-light">
+          <div className="flex-row justify-center items-center">
+            <div className="mx-0 max-w-fit py-2 px-0 font-light text-2xl flex flex-row flex-wrap justify-center items-center">
+              <p className="font-light w-fit">
                 <motion.span
-                  className="text-neutral-500 text-9xl font-light font-mono"
+                  className="text-neutral-500 text-9xl font-mono"
                   initial={{ opacity: 0.4 }}
                   animate={{ opacity: 1 }}
                   transition={{
@@ -42,8 +42,10 @@ const About = function () {
                   {ABOUT_TEXT_TITLE.D[0]}
                 </motion.span>
                 {ABOUT_TEXT_TITLE.D[1]}
+              </p>
+              <p className="font-light w-fit">
                 <motion.span
-                  className="text-neutral-500 text-9xl font-light font-mono"
+                  className="text-neutral-500 text-9xl font-mono"
                   initial={{ opacity: 0.4 }}
                   animate={{ opacity: 1 }}
                   transition={{
@@ -55,8 +57,10 @@ const About = function () {
                   {ABOUT_TEXT_TITLE.E[0]}
                 </motion.span>
                 {ABOUT_TEXT_TITLE.E[1]}
+              </p>
+              <p className="font-light w-fit">
                 <motion.span
-                  className="text-neutral-500 text-9xl font-light font-mono"
+                  className="text-neutral-500  text-9xl font-mono"
                   initial={{ opacity: 0.4 }}
                   animate={{ opacity: 1 }}
                   transition={{
@@ -69,7 +73,7 @@ const About = function () {
                 </motion.span>
                 {ABOUT_TEXT_TITLE.V[1]}
               </p>
-            </h3>
+            </div>
             <p className="text-lg font-light text-justify">
               {ABOUT_TEXT_CONTENT}
             </p>
