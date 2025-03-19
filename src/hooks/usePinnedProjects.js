@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { CREDENTIALS } from "../constants/credentials";
 
-const GITHUB_USERNAME = CREDENTIALS.GITHUB_USERNAME;
-const GITHUB_TOKEN = CREDENTIALS.GITHUB_TOKEN;
+const GITHUB_USERNAME = import.meta.env.VITE_GITHUB_USERNAME;
+const GITHUB_TOKEN = import.meta.env.VITE_GITHUB_TOKEN;
 
 const usePinnedProjects = () => {
   const [projects, setProjects] = useState([]);
