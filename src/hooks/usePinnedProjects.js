@@ -59,8 +59,6 @@ const usePinnedProjects = () => {
           }
         );
 
-        console.log("Resposta da API do GitHub:", response.data);
-
         if (!response.data?.data?.user) {
           throw new Error(
             "Erro ao buscar dados. Verifique seu token e usuário."
