@@ -1,7 +1,20 @@
-import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
+import usePinnedProjects from "../hooks/usePinnedProjects";
 
 const Projects = () => {
+  const { projects, loading, error } = usePinnedProjects();
+
+  if (loading) {
+    return (
+      <p className="text-center text-neutral-400">Carregando projetos...</p>
+    );
+  }
+
+  if (error) {
+    return (
+      <p className="text-center text-red-500">Erro ao carregar projetos.</p>
+    );
+  }
   return (
     <div className="border-b border-neutral-900 pb-4">
       <motion.h2
@@ -13,7 +26,7 @@ const Projects = () => {
         Projetos
       </motion.h2>
       <div>
-        {PROJECTS.map((project, index) => (
+        {projects.map((project, index) => (
           <motion.div
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: -100 }}
@@ -50,6 +63,20 @@ const Projects = () => {
             </div>
           </motion.div>
         ))}
+      </div>
+      <div>
+        <p>
+          Para ver outro projetos{" "}
+          <a
+            href="https://github.com/Leonardobern10"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            👉CLIQUE AQUI👈
+          </a>
+          😉
+        </p>
       </div>
     </div>
   );
