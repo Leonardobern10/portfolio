@@ -1,11 +1,11 @@
 import { RiReactjsLine } from "react-icons/ri";
-import { SiApachecassandra } from "react-icons/si";
+import { FaVuejs } from "react-icons/fa";
 import { SiSpring } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
-import { FaDocker } from "react-icons/fa";
-import { DiRedis } from "react-icons/di";
+import { FaGitAlt } from "react-icons/fa";
+import { FaAngular } from "react-icons/fa";
 import { RiJavascriptLine } from "react-icons/ri";
-import { AiOutlinePython } from "react-icons/ai";
+import { SiJest } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { BiLogoTypescript } from "react-icons/bi";
@@ -73,7 +73,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiApachecassandra className="text-7xl text-gray-800" />
+          <FaVuejs className="text-7xl text-green-800" />
         </motion.div>
         <motion.div
           variants={iconVariants(3)}
@@ -81,7 +81,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <DiRedis className="text-7xl text-red-800" />
+          <FaAngular className="text-7xl text-red-800" />
         </motion.div>
         <motion.div
           variants={iconVariants(3)}
@@ -89,7 +89,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <FaDocker className="text-7xl text-blue-500" />
+          <FaGitAlt className="text-7xl text-orange-500" />
         </motion.div>
         <motion.div
           variants={iconVariants(2)}
@@ -121,7 +121,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <AiOutlinePython className="text-7xl text-yellow-500" />
+          <SiJest className="text-7xl text-red-500" />
         </motion.div>
         <motion.div
           variants={iconVariants(3)}
