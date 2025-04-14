@@ -12,7 +12,7 @@ function NavBar() {
       </div>
       <div className="m-8 flex items-center justify-center gap-4 text-2xl">
         <a
-          href="https://www.linkedin.com/in/leonardo-bern/"
+          href="https://www.linkedin.com/in/leonardo-bernardo25/"
           target="_blank"
           rel="noopener noreferrer"
         >
