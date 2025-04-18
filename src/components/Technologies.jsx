@@ -47,9 +47,9 @@ const Technologies = () => {
           variants={iconVariants(3)}
           initial="initial"
           animate="animate"
-          className=" rounded-2xl border-4 border-neutral-800 p-4"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <FaJava className="text-7xl text-red-800" />
+          <FaJava className="text-7xl max-md:text-2xl text-red-800" />
         </motion.div>
         <motion.div
           variants={iconVariants(2)}
@@ -57,7 +57,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <RiReactjsLine className="text-7xl text-cyan-400" />
+          <RiReactjsLine className="text-7xl max-md:text-2xl text-cyan-400" />
         </motion.div>
         <motion.div
           variants={iconVariants(3)}
@@ -65,7 +65,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <BiLogoTypescript className="text-7xl text-blue-800" />
+          <BiLogoTypescript className="text-7xl max-md:text-2xl text-blue-800" />
         </motion.div>
         <motion.div
           variants={iconVariants(3)}
@@ -73,7 +73,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <FaVuejs className="text-7xl text-green-800" />
+          <FaVuejs className="text-7xl max-md:text-2xl text-green-800" />
         </motion.div>
         <motion.div
           variants={iconVariants(3)}
@@ -81,7 +81,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <FaAngular className="text-7xl text-red-800" />
+          <FaAngular className="text-7xl max-md:text-2xl text-red-800" />
         </motion.div>
         <motion.div
           variants={iconVariants(3)}
@@ -89,7 +89,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <FaGitAlt className="text-7xl text-orange-400" />
+          <FaGitAlt className="text-7xl max-md:text-2xl text-orange-400" />
         </motion.div>
         <motion.div
           variants={iconVariants(2)}
@@ -97,7 +97,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiMysql className="text-7xl text-gray-600" />
+          <SiMysql className="text-7xl max-md:text-2xl text-gray-600" />
         </motion.div>
         <motion.div
           variants={iconVariants(2)}
@@ -105,7 +105,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiSpring className="text-7xl text-green-400" />
+          <SiSpring className="text-7xl max-md:text-2xl text-green-400" />
         </motion.div>
         <motion.div
           variants={iconVariants(2)}
@@ -113,7 +113,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <RiJavascriptLine className="text-7xl text-yellow-300" />
+          <RiJavascriptLine className="text-7xl max-md:text-2xl text-yellow-300" />
         </motion.div>
         <motion.div
           variants={iconVariants(3)}
@@ -121,7 +121,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiJest className="text-7xl text-red-500" />
+          <SiJest className="text-7xl max-md:text-2xl text-red-500" />
         </motion.div>
         <motion.div
           variants={iconVariants(3)}
@@ -129,7 +129,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiMongodb className="text-7xl text-green-500" />
+          <SiMongodb className="text-7xl max-md:text-2xl text-green-500" />
         </motion.div>
         <motion.div
           variants={iconVariants(2)}
@@ -137,7 +137,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <FaNodeJs className="text-7xl text-green-500" />
+          <FaNodeJs className="text-7xl max-md:text-2xl text-green-500" />
         </motion.div>
         <motion.div
           variants={iconVariants(3)}
@@ -145,7 +145,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <BiLogoPostgresql className="text-7xl text-sky-700" />
+          <BiLogoPostgresql className="text-7xl max-md:text-2xl text-sky-700" />
         </motion.div>
       </motion.div>
     </div>

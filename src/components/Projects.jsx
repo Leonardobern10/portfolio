@@ -32,14 +32,16 @@ const Projects = () => {
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 0.5 }}
             key={index}
-            className="mb-8 flex flex-wrap lg:justify-center"
+            className="mb-8 flex max-md:flex-col flex-wrap lg:justify-center"
           >
             <div className="w-full lg:w-1/4">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="mb-8 h-48 w-48 object-cover rounded"
-              />
+              <a href={project.url} target="_blank" rel="noopener noreferrer">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="mb-8 h-48 w-48 max-lg:w-full object-cover rounded"
+                />
+              </a>
             </div>
             <div className="w-full max-w-xl lg:w-3/4">
               <h6 className="mb-2 font-smibold">
