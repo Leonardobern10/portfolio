@@ -41,111 +41,113 @@ const Technologies = () => {
         whileInView={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: -100 }}
         transition={{ duration: 1.5 }}
-        className="flex flex-wrap items-center justify-center gap-10 w-full max-w-5xl mx-auto"
+        className="flex flex-wrap items-center justify-center gap-10 max-md:gap-5 w-full max-md:w-full max-lg:w-7/8 max-w-5xl mx-auto"
       >
         <motion.div
           variants={iconVariants(3)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="tech-container"
         >
-          <FaJava className="text-7xl max-md:text-2xl text-red-800" />
+          <div>
+            <FaJava className="tech text-red-800" />
+          </div>
         </motion.div>
         <motion.div
           variants={iconVariants(2)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="tech-container"
         >
-          <RiReactjsLine className="text-7xl max-md:text-2xl text-cyan-400" />
+          <RiReactjsLine className="tech text-cyan-400" />
         </motion.div>
         <motion.div
           variants={iconVariants(3)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="tech-container"
         >
-          <BiLogoTypescript className="text-7xl max-md:text-2xl text-blue-800" />
+          <BiLogoTypescript className="tech max-md:text-2xl text-blue-800" />
         </motion.div>
         <motion.div
           variants={iconVariants(3)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="tech-container"
         >
-          <FaVuejs className="text-7xl max-md:text-2xl text-green-800" />
+          <FaVuejs className="tech max-md:text-2xl text-green-800" />
         </motion.div>
         <motion.div
           variants={iconVariants(3)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="tech-container"
         >
-          <FaAngular className="text-7xl max-md:text-2xl text-red-800" />
+          <FaAngular className="tech max-md:text-2xl text-red-800" />
         </motion.div>
         <motion.div
           variants={iconVariants(3)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="tech-container"
         >
-          <FaGitAlt className="text-7xl max-md:text-2xl text-orange-400" />
+          <FaGitAlt className="tech max-md:text-2xl text-orange-400" />
         </motion.div>
         <motion.div
           variants={iconVariants(2)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="tech-container"
         >
-          <SiMysql className="text-7xl max-md:text-2xl text-gray-600" />
+          <SiMysql className="tech max-md:text-2xl text-gray-600" />
         </motion.div>
         <motion.div
           variants={iconVariants(2)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="tech-container"
         >
-          <SiSpring className="text-7xl max-md:text-2xl text-green-400" />
+          <SiSpring className="tech max-md:text-2xl text-green-400" />
         </motion.div>
         <motion.div
           variants={iconVariants(2)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="tech-container"
         >
-          <RiJavascriptLine className="text-7xl max-md:text-2xl text-yellow-300" />
+          <RiJavascriptLine className="tech max-md:text-2xl text-yellow-300" />
         </motion.div>
         <motion.div
           variants={iconVariants(3)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="tech-container"
         >
-          <SiJest className="text-7xl max-md:text-2xl text-red-500" />
+          <SiJest className="tech max-md:text-2xl text-red-500" />
         </motion.div>
         <motion.div
           variants={iconVariants(3)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="tech-container"
         >
-          <SiMongodb className="text-7xl max-md:text-2xl text-green-500" />
+          <SiMongodb className="tech max-md:text-2xl text-green-500" />
         </motion.div>
         <motion.div
           variants={iconVariants(2)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="tech-container"
         >
-          <FaNodeJs className="text-7xl max-md:text-2xl text-green-500" />
+          <FaNodeJs className="tech max-md:text-2xl text-green-500" />
         </motion.div>
         <motion.div
           variants={iconVariants(3)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="tech-container"
         >
-          <BiLogoPostgresql className="text-7xl max-md:text-2xl text-sky-700" />
+          <BiLogoPostgresql className="tech max-md:text-2xl text-sky-700" />
         </motion.div>
       </motion.div>
     </div>

@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.4",
     "@vercel/analytics": "^1.5.0",
     "axios": "^1.7.9",
     "dotenv": "^16.4.7",
@@ -18,9 +19,11 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.2.1",
-    "react-portfolio": "file:"
+    "react-portfolio": "file:",
+    "tailwindcss": "^4.1.4"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.4",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@vitejs/plugin-react": "^4.2.1",
@@ -30,7 +33,6 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
     "postcss": "^8.4.38",
-    "tailwindcss": "^3.4.4",
     "vite": "^5.2.0"
   },
   "description": "Este é o repositório do meu portfólio pessoal, onde apresento meus projetos, habilidades e experiências em desenvolvimento. O site foi desenvolvido para demonstrar minha trajetória e competências como desenvolvedor de software.",

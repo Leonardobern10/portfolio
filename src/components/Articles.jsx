@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 const Articles = () => {
   const [data, setData] = useState([]);
 
+  const getWidth = () => window.innerWidth;
+
   useEffect(() => {
     const fetchArticles = async () => {
       const articles = await scrapMedium(); // Aguarda os dados
@@ -33,30 +35,30 @@ const Articles = () => {
             className="my-8 flex text-center text-2xl"
           >
             <div
-              className="border-4 rounded-md overflow-hidden shadow-lg border-neutral-800"
+              className=" border-4 rounded-md overflow-hidden shadow-lg border-neutral-800"
               key={index}
             >
               <div className="w-full h-40">
-                <img
-                  className="w-full h-full object-cover"
-                  src={article.image}
-                  alt={article.title}
-                />
-              </div>
-              <h2 className="text-2xl m-4 font-semibold">
                 <a
                   href={article.link}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {article.title}
+                  <img
+                    className="w-full h-full object-cover"
+                    src={article.image}
+                    alt={article.title}
+                  />
                 </a>
+              </div>
+              <h2 className="max-md:w-7/8 text-2xl max-md:text-sm m-4 font-semibold">
+                {article.title}
               </h2>
               <ul className="flex flex-wrap w-full gap-2 p-4">
                 {article.tags.map((tag, idx) => (
                   <li
                     key={idx}
-                    className="mr-2 rounded bg-neutral-900 px-3 py-1 font-medium text-pink-900 whitespace-nowrap"
+                    className="mr-2 rounded bg-neutral-900 px-3 py-1 font-medium max-md:text-sm text-pink-900 whitespace-nowrap"
                   >
                     {tag}
                   </li>
