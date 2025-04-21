@@ -27,8 +27,8 @@ const About = function () {
           className="w-full lg:w-1/2"
         >
           <div className="flex-row justify-center items-center">
-            <div className="mx-0 mb-8 max-w-fit py-2 px-0 font-light text-2xl flex flex-row flex-wrap justify-center items-center">
-              <p className="font-light w-fit">
+            <div className="mx-0 mb-8 py-2 px-0 font-light text-lg md:w-[90%] flex flex-row flex-wrap justify-center items-center">
+              <p className="font-light">
                 <motion.span
                   className="text-neutral-500 text-9xl font-mono"
                   initial={{ opacity: 0.4 }}
@@ -74,7 +74,7 @@ const About = function () {
                 {ABOUT_TEXT_TITLE.V[1]}
               </p>
             </div>
-            <p className="text-lg font-light text-justify w-[80%]">
+            <p className="text-lg font-light text-justify w-full md:px-12">
               {ABOUT_TEXT_CONTENT}
             </p>
           </div>

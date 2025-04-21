@@ -55,7 +55,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="border-b border-neutral-900 pb-20 flex-col justify-center items-center px-4">
+    <div className="border-b border-neutral-900 pb-20 flex-col justify-center items-center px-4 lg:px-8">
       <h2 className="my-10 text-center text-4xl ">Entre em contato</h2>
       <form
         onSubmit={handleSubmit}

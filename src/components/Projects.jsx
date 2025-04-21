@@ -32,9 +32,9 @@ const Projects = () => {
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 0.5 }}
             key={index}
-            className="mb-8 flex max-md:flex-col flex-wrap lg:justify-center"
+            className="mb-8 flex max-md:flex-col md:items-center flex-wrap md:justify-center md:gap-x-4"
           >
-            <div className="w-full lg:w-1/4">
+            <div className="w-full md:w-1/2 lg:w-1/4">
               <a href={project.url} target="_blank" rel="noopener noreferrer">
                 <img
                   src={project.image}
@@ -43,7 +43,7 @@ const Projects = () => {
                 />
               </a>
             </div>
-            <div className="w-full max-w-xl lg:w-3/4">
+            <div className="w-full max-w-xl md:w-1/2 lg:w-3/4">
               <h6 className="mb-2 font-smibold">
                 <a href={project.url} target="_blank" rel="noopener noreferrer">
                   {project.title}

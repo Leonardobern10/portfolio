@@ -17,7 +17,7 @@ const Articles = () => {
   }, []);
 
   return (
-    <div className="pb-12 px-4">
+    <div className="pb-12 px-4 lg:px-8">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
@@ -33,11 +33,9 @@ const Articles = () => {
             initial={{ opacity: 0, x: 100 }}
             transition={{ duration: 1.0 }}
             className="my-8 flex text-center text-2xl"
+            key={index}
           >
-            <div
-              className=" border-4 rounded-md overflow-hidden shadow-lg border-neutral-800"
-              key={index}
-            >
+            <div className="rounded-md overflow-hidden shadow-lg border-neutral-800">
               <div className="w-full h-40">
                 <a
                   href={article.link}
@@ -51,14 +49,14 @@ const Articles = () => {
                   />
                 </a>
               </div>
-              <h2 className="max-md:w-7/8 text-2xl max-md:text-sm m-4 font-semibold">
+              <h2 className="max-md:w-7/8 text-lg max-md:text-sm m-4 font-semibold">
                 {article.title}
               </h2>
               <ul className="flex flex-wrap w-full gap-2 p-4">
                 {article.tags.map((tag, idx) => (
                   <li
                     key={idx}
-                    className="mr-2 rounded bg-neutral-900 px-3 py-1 font-medium max-md:text-sm text-pink-900 whitespace-nowrap"
+                    className="mr-2 rounded bg-neutral-900 px-3 py-1 font-medium max-lg:text-xs text-sm text-pink-900 whitespace-nowrap"
                   >
                     {tag}
                   </li>
