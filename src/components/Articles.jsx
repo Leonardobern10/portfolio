@@ -26,7 +26,7 @@ const Articles = () => {
       >
         Artigos
       </motion.h2>
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-3">
+      <div className=" max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-3">
         {data.map((article, index) => (
           <motion.div
             whileInView={{ opacity: 1, x: 0 }}
@@ -35,8 +35,12 @@ const Articles = () => {
             className="my-8 flex text-center text-2xl"
             key={index}
           >
-            <div className="rounded-md overflow-hidden shadow-lg border-neutral-800">
-              <div className="w-full h-40">
+            <div className="rounded-md overflow-hidden shadow-lg border-neutral-500 hover:shadow-xs hover:shadow-red-400">
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                className="w-full h-40"
+              >
                 <a
                   href={article.link}
                   target="_blank"
@@ -48,7 +52,7 @@ const Articles = () => {
                     alt={article.title}
                   />
                 </a>
-              </div>
+              </motion.div>
               <h2 className="max-md:w-7/8 text-lg max-md:text-sm m-4 font-semibold">
                 {article.title}
               </h2>

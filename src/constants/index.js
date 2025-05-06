@@ -1,11 +1,8 @@
-export const HERO_CONTENT = `Engenheiro de Software Full-Stack com mais de 2 anos de experiência no desenvolvimento de soluções robustas, escaláveis e seguras. Especialista na criação de APIs performáticas, seguindo as melhores práticas de Clean Code, SOLID, Design Patterns e Estruturas de Dados para garantir código limpo, eficiente e de fácil manutenção.`;
+export const HERO_CONTENT =
+  "Engenheiro de Software Full-Stack com mais de 2 anos de experiência no desenvolvimento de aplicações robustas e APIs RESTful escaláveis. Especializado em backend com Java e JavaScript, arquitetura de microsserviços, práticas de Clean Code, SOLID e aplicação de Design Patterns. Foco em criar soluções performáticas, seguras e de alta manutenibilidade, utilizando estruturas de dados eficientes e testes automatizados. Entusiasta de inovação, boas práticas de engenharia e evolução contínua de produtos digitais.";
 
-export const ABOUT_TEXT_TITLE = {
-  D: ["d", "edicação."],
-  E: ["e", "mpatia."],
-  V: ["v", "ontade."],
-};
-export const ABOUT_TEXT_CONTENT = `Gosto de desafios e, principalmente, resolvê-los. Procuro sempre me aprofundar nos conceitos sobre tecnologias e linguagens. Minhas áreas de maior destaque são aplicações com Java e JavaScript no back-end, front-end com Javascript e os frameworks Vue.js, React e Angular; e bancos de dados como PostgreSQL, MongoDB e Redis.`;
+export const ABOUT_TEXT_CONTENT =
+  "Sou apaixonado por desafios e pela busca constante de soluções eficientes. Tenho forte interesse em aprofundar meus conhecimentos em tecnologias e linguagens de programação. Minhas principais áreas de atuação incluem o desenvolvimento de aplicações back-end com Java e JavaScript, criação de interfaces front-end utilizando JavaScript e frameworks modernos como Vue.js, React e Angular, além da gestão de bancos de dados como PostgreSQL, MongoDB e Redis.";
 
 export const CONTACT = {
   address: "Nova Iguaçu, RJ, Brasil",

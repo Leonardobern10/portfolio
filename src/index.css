@@ -9,9 +9,13 @@
 }
 
 .tech {
-  @apply text-7xl max-md:text-4xl max-lg:text-5xl;
+  @apply text-7xl max-md:text-2xl max-lg:text-5xl;
 }
 
 .tech-container {
   @apply rounded-2xl max-md:rounded-xl max-lg:p-3 border-4 border-neutral-800 p-4 max-md:p-2;
+}
+
+.navbar-item {
+  @apply hover:text-red-400 hover:shadow-2xs hover:shadow-red-400;
 }

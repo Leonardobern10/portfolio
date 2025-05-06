@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import { IoDocumentText } from "react-icons/io5";
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -134,7 +135,18 @@ function ContactForm() {
           Enviar
         </button>
       </form>
-      <p className="text-1xl mt-28"> Made With 🧠 By Leonardo Bernardo 🤯</p>
+      <div className="mt-28">
+        <a
+          href="./public/SoftEngineer_LeonardoBernardo_Fullstack_2.pdf"
+          download
+        >
+          <div className="flex flex-row items-center">
+            <p>Clique aqui para baixar meu currículo 👉</p>
+            <IoDocumentText className="navbar-item" />
+          </div>
+        </a>
+        <p className="text-1xl"> Made With 🧠 By Leonardo Bernardo 🤯</p>
+      </div>
     </div>
   );
 }

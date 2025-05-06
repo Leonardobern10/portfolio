@@ -32,18 +32,22 @@ const Projects = () => {
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 0.5 }}
             key={index}
-            className="mb-8 flex max-md:flex-col md:items-center flex-wrap md:justify-center md:gap-x-4"
+            className="mb-8 flex max-md:flex-col md:items-center flex-wrap md:justify-center md:gap-x-4 hover:shadow-red-400 rounded-2xl"
           >
-            <div className="w-full md:w-1/2 lg:w-1/4">
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className="w-full md:w-1/2 lg:w-1/4"
+            >
               <a href={project.url} target="_blank" rel="noopener noreferrer">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="mb-8 h-48 w-48 max-lg:w-full object-cover rounded"
+                  className="mb-8 h-48 w-48 max-lg:w-full object-cover rounded hover:shadow-2xl hover:shadow-red-400"
                 />
               </a>
-            </div>
-            <div className="w-full max-w-xl md:w-1/2 lg:w-3/4">
+            </motion.div>
+            <div className="w-full max-w-xl md:w-1/2 lg:w-3/4 p-8 rounded-2xl ">
               <h6 className="mb-2 font-smibold">
                 <a href={project.url} target="_blank" rel="noopener noreferrer">
                   {project.title}
@@ -73,6 +77,7 @@ const Projects = () => {
             href="https://github.com/Leonardobern10"
             target="_blank"
             rel="noopener noreferrer"
+            className="hover:text-red-400"
           >
             {" "}
             👉CLIQUE AQUI👈

@@ -33,13 +33,13 @@ const Hero = () => {
               className="bg-gradient-to-r from-pink-300 via-slate-500 
             to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
             >
-              Software Engineer
+              FullStack Developer
             </motion.span>
             <motion.p
               variants={container(1)}
               initial="hidden"
               animate="visible"
-              className="my-2 max-w-xl py-8 font-light text-lg"
+              className="my-2 max-w-xl py-8 font-light text-lg text-justify"
             >
               {HERO_CONTENT}
             </motion.p>
@@ -52,7 +52,7 @@ const Hero = () => {
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1.2 }}
               src={profilePic}
-              alt="Kevin Rush"
+              alt="Image profile demo"
             />
           </div>
         </div>
