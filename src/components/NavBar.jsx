@@ -16,10 +16,7 @@ function NavBar() {
         <img className="mx-2 w-10" src={logo} alt="logo" />
       </div>
       <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-        <a
-          href="./public/SoftEngineer_LeonardoBernardo_Fullstack_2.pdf"
-          download
-        >
+        <a href="/SoftEngineer_LeonardoBernardo_Fullstack_2.pdf" download>
           <div className="flex flex-col items-center">
             <IoDocumentText className="navbar-item" />
           </div>

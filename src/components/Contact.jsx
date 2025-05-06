@@ -136,10 +136,7 @@ function ContactForm() {
         </button>
       </form>
       <div className="mt-28">
-        <a
-          href="./public/SoftEngineer_LeonardoBernardo_Fullstack_2.pdf"
-          download
-        >
+        <a href="/SoftEngineer_LeonardoBernardo_Fullstack_2.pdf" download>
           <div className="flex flex-row items-center">
             <p>Clique aqui para baixar meu currículo 👉</p>
             <IoDocumentText className="navbar-item" />
