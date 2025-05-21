@@ -5,8 +5,6 @@ import { motion } from "framer-motion";
 const Articles = () => {
   const [data, setData] = useState([]);
 
-  const getWidth = () => window.innerWidth;
-
   useEffect(() => {
     const fetchArticles = async () => {
       const articles = await scrapMedium(); // Aguarda os dados
