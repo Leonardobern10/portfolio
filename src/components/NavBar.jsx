@@ -17,8 +17,9 @@ function NavBar() {
       </div>
       <div className="m-8 flex items-center justify-center gap-4 text-2xl">
         <a href="/SoftEngineer_LeonardoBernardo_Fullstack_2.pdf" download>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center hover:text-red-500">
             <IoDocumentText className="navbar-item" />
+            <p className="text-xs">Curriculo</p>
           </div>
         </a>
         <a
