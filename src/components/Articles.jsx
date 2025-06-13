@@ -24,7 +24,7 @@ const Articles = () => {
       >
         Artigos
       </motion.h2>
-      <div className=" max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-3">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-3">
         {data.map((article, index) => (
           <motion.div
             whileInView={{ opacity: 1, x: 0 }}
@@ -33,7 +33,7 @@ const Articles = () => {
             className="my-8 flex text-center text-2xl"
             key={index}
           >
-            <div className="rounded-md overflow-hidden shadow-lg border-neutral-500 hover:shadow-xs hover:shadow-red-400">
+            <div className="bg-neutral-900/70 rounded-md overflow-hidden border-neutral-500 hover:shadow-xs hover:shadow-red-400">
               <motion.div
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
