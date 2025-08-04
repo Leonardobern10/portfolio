@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import usePinnedProjects from "../hooks/usePinnedProjects";
+import ButtonLink from "./ButtonLink";
 
 const Projects = () => {
   const { projects, loading, error } = usePinnedProjects();
@@ -39,7 +40,11 @@ const Projects = () => {
               whileTap={{ scale: 0.95 }}
               className="w-full md:w-1/2 lg:w-1/4"
             >
-              <a href={project.url} target="_blank" rel="noopener noreferrer">
+              <a
+                href={project.homepageUrl ?? project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   src={project.image}
                   alt={project.title}
@@ -65,6 +70,14 @@ const Projects = () => {
                     {tech}
                   </span>
                 ))}
+              </div>
+              <div className="flex flex-row items-center gap-x-4">
+                {project.homepageUrl && (
+                  <ButtonLink title="Ver site" href={project.homepageUrl} />
+                )}
+                {project.url && (
+                  <ButtonLink title="Ver repositorio" href={project.url} />
+                )}
               </div>
             </div>
           </motion.div>

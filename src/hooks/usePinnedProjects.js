@@ -28,6 +28,7 @@ const usePinnedProjects = () => {
                     name
                     url
                     description
+                    homepageUrl
                     stargazerCount
                     forkCount
                     primaryLanguage {
@@ -69,6 +70,7 @@ const usePinnedProjects = () => {
           title: repo.name,
           url: repo.url,
           description: repo.description,
+          homepageUrl: repo.homepageUrl,
           stars: repo.stargazerCount,
           forks: repo.forkCount,
           language: repo.primaryLanguage
@@ -80,7 +82,6 @@ const usePinnedProjects = () => {
           image: `https://opengraph.githubassets.com/1/${GITHUB_USERNAME}/${repo.name}`,
           technologies: repo.languages.nodes.map((lang) => lang.name), // 🚀 TODAS AS LINGUAGENS!
         }));
-
         setProjects(repos);
       } catch (err) {
         console.error("Erro ao buscar repositórios:", err);
