@@ -9,6 +9,6 @@ export const scrapMedium = async () => {
     const value = data.dataMedium;
     return value;
   } catch (error) {
-    console.error(error);
+    throw new Error(error);
   }
 };

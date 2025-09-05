@@ -42,7 +42,6 @@ function ContactForm() {
           alert("Mensagem enviada com sucesso!");
         },
         (error) => {
-          console.error(error.text);
           alert("Ocorreu um erro ao enviar a mensagem. Tente novamente.");
         }
       );

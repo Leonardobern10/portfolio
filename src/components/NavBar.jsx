@@ -6,10 +6,6 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { IoDocumentText } from "react-icons/io5";
 
 function NavBar() {
-  function legend() {
-    console.log(this);
-  }
-
   return (
     <nav className="mb-20 flex items-center justify-between py-6">
       <div className="flex flex-shrink-0 items-center">

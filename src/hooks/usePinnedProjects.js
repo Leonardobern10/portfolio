@@ -12,10 +12,9 @@ const usePinnedProjects = () => {
   useEffect(() => {
     const fetchPinnedRepos = async () => {
       if (!GITHUB_USERNAME || !GITHUB_TOKEN) {
-        console.error("Erro: Variáveis de ambiente não configuradas.");
         setError("Configuração ausente");
         setLoading(false);
-        return;
+        throw new Error("Erro: Variáveis de ambiente não configuradas.");
       }
 
       const query = {
@@ -80,12 +79,12 @@ const usePinnedProjects = () => {
               }
             : null,
           image: `https://opengraph.githubassets.com/1/${GITHUB_USERNAME}/${repo.name}`,
-          technologies: repo.languages.nodes.map((lang) => lang.name), // 🚀 TODAS AS LINGUAGENS!
+          technologies: repo.languages.nodes.map((lang) => lang.name),
         }));
         setProjects(repos);
       } catch (err) {
-        console.error("Erro ao buscar repositórios:", err);
         setError(err.message);
+        throw new Error("Erro ao buscar repositórios:", err);
       } finally {
         setLoading(false);
       }
