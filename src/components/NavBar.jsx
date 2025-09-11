@@ -12,14 +12,14 @@ function NavBar() {
         <img className="mx-2 w-10" src={logo} alt="logo" />
       </div>
       <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-        <a href="/SoftEngineer_LeonardoBernardo_Fullstack_2.pdf" download>
+        <a href="/DEV_FULLSTACK_LEONARDOBERNARDO.pdf" download="Curriculo_LEONARDO.pdf">
           <div className="flex flex-col items-center hover:text-red-500">
             <IoDocumentText className="navbar-item" />
             <p className="text-xs">Curriculo</p>
           </div>
         </a>
         <a
-          href="https://www.linkedin.com/in/leonardo-bernardo25/"
+          href="https://www.linkedin.com/in/leonardobernardo-dev/"
           target="_blank"
           rel="noopener noreferrer"
         >
