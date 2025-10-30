@@ -25,7 +25,7 @@ const Articles = () => {
         Artigos
       </motion.h2>
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-3">
-        {data.map((article, index) => (
+        {data ? data.map((article, index) => (
           <motion.div
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: 100 }}
@@ -66,7 +66,7 @@ const Articles = () => {
               </ul>
             </div>
           </motion.div>
-        ))}
+        )): <p>Não foi obter os artigos...</p>}
       </div>
     </div>
   );

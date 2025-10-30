@@ -14,6 +14,7 @@ const usePinnedProjects = () => {
       if (!GITHUB_USERNAME || !GITHUB_TOKEN) {
         setError("Configuração ausente");
         setLoading(false);
+        console.log(GITHUB_TOKEN, GITHUB_USERNAME);
         throw new Error("Erro: Variáveis de ambiente não configuradas.");
       }
 
