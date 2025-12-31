@@ -1,8 +1,12 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const GITHUB_USERNAME = import.meta.env.VITE_GITHUB_USERNAME;
-const GITHUB_TOKEN = import.meta.env.VITE_GITHUB_TOKEN;
+const GITHUB_USERNAME = import.meta.env.VITE_GITHUB_USERNAME
+  ? import.meta.env.VITE_GITHUB_USERNAME
+  : process.env.VITE_GITHUB_USERNAME;
+const GITHUB_TOKEN = import.meta.env.VITE_GITHUB_TOKEN
+  ? import.meta.env.VITE_GITHUB_TOKEN
+  : process.env.VITE_GITHUB_TOKEN;
 
 const usePinnedProjects = () => {
   const [projects, setProjects] = useState([]);
@@ -14,7 +18,6 @@ const usePinnedProjects = () => {
       if (!GITHUB_USERNAME || !GITHUB_TOKEN) {
         setError("Configuração ausente");
         setLoading(false);
-        console.log(GITHUB_TOKEN, GITHUB_USERNAME);
         throw new Error("Erro: Variáveis de ambiente não configuradas.");
       }
 

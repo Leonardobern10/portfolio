@@ -1,35 +1,48 @@
-import About from "./components/About";
-import Hero from "./components/Hero";
-import NavBar from "./components/NavBar";
-import Technologies from "./components/Technologies";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Articles from "./components/Articles";
+import About from './components/About';
+import Hero from './components/Hero';
+import NavBar from './components/NavBar';
+import Technologies from './components/Technologies';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Articles from './components/Articles';
+import { useState } from 'react';
+
+const styles = {
+    container:
+        'overflow-x-hidden text-neutral-300 scroll-smooth antialiased selection:bg-cyan-300 selection:text-cyan-900',
+    div1: 'fixed top-0 -z-10 h-full w-full',
+    div2: 'absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%, rgba(120,119,198,0.3),rgba(255,255,255,0))]',
+    body: 'container mx-auto px-8',
+};
 
 function App() {
-  return (
-    <div
-      className="overflow-x-hidden text-neutral-300 scroll-smooth
-    antialiased selection:bg-cyan-300 selection:text-cyan-900"
-    >
-      <div className="fixed top-0 -z-10 h-full w-full">
-        <div
-          className="absolute top-0 z-[-2] h-screen w-screen 
-      bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,
-      rgba(120,119,198,0.3),rgba(255,255,255,0))]"
-        ></div>
-      </div>
-      <div className="container mx-auto px-8">
-        <NavBar />
-        <Hero />
-        <About />
-        <Technologies />
-        <Projects />
-        <Articles />
-        <Contact />
-      </div>
-    </div>
-  );
+    const [currentLanguage, setCurrentLanguage] = useState('BR');
+
+    function changeLanguage() {
+        setCurrentLanguage((current) => (current === 'BR' ? 'EN' : 'BR'));
+    }
+
+    const viewLanguage = () => {
+        if (currentLanguage === 'BR') return 'EN';
+        return 'BR';
+    };
+
+    return (
+        <div className={styles.container}>
+            <div className={styles.div1}>
+                <div className={styles.div2}></div>
+            </div>
+            <div className={styles.body}>
+                <NavBar language={viewLanguage()} onClick={changeLanguage} />
+                <Hero language={currentLanguage} />
+                <About language={currentLanguage} />
+                <Technologies language={currentLanguage} />
+                <Projects language={currentLanguage} />
+                <Articles language={currentLanguage} />
+                <Contact language={currentLanguage} />
+            </div>
+        </div>
+    );
 }
 
 export default App;

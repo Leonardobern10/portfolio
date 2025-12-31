@@ -7,7 +7,6 @@ export const scrapMedium = async () => {
   try {
     const { data } = await axios.get(mediumProfileURL);
     const value = data.dataMedium;
-    console.log(value);
     return value;
   } catch (error) {
     throw new Error(error);
