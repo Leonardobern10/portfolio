@@ -41,7 +41,7 @@ export default function Projects() {
                         initial={{ opacity: 0, x: -100 }}
                         transition={{ duration: 0.5 }}
                         key={project.id}
-                        className="mb-8 flex max-md:flex-col md:items-center flex-wrap md:justify-center md:gap-x-4 hover:shadow-red-400 rounded-2xl"
+                        className="mb-8 flex max-md:flex-col md:items-center flex-wrap md:justify-evenly md:gap-x-10 hover:shadow-red-400 rounded-2xl"
                     >
                         <motion.div
                             whileHover={{ scale: 1.1 }}
@@ -56,7 +56,7 @@ export default function Projects() {
                                 <img
                                     src={project.image}
                                     alt={project.title}
-                                    className="mb-8 h-48 w-48 max-lg:w-full object-cover rounded hover:shadow-2xl hover:shadow-red-400"
+                                    className="mb-8 h-fit w-fit max-lg:w-full object-contain rounded hover:shadow-2xl hover:shadow-red-400"
                                 />
                             </a>
                         </motion.div>
@@ -78,7 +78,7 @@ export default function Projects() {
                                 {project.technologies.map((tech, index) => (
                                     <span
                                         key={index}
-                                        className="w-fit rounded bg-neutral-800 px-3 py-1 font-medium text-pink-900 whitespace-nowrap border-2 border-pink-900/20"
+                                        className="w-fit rounded font-rubik bg-neutral-800 px-3 py-1 font-medium text-pink-700 whitespace-nowrap border-2 border-pink-900/20"
                                     >
                                         {tech}
                                     </span>
@@ -97,9 +97,6 @@ export default function Projects() {
                                         href={project.url}
                                     />
                                 )}
-                                <NavLink to={`/project/${project.id}`}>
-                                    Mais informações
-                                </NavLink>
                             </div>
                         </div>
                     </motion.div>
