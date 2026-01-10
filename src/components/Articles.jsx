@@ -2,9 +2,11 @@ import { useEffect, useState } from 'react';
 import { scrapMedium } from '../constants/articles';
 import { motion } from 'framer-motion';
 import { SECTIONS } from '../constants';
+import useLanguageStore from '../store/useLanguage';
 
-const Articles = ({ language }) => {
+export default function Articles() {
     const [data, setData] = useState([]);
+    const { language } = useLanguageStore();
 
     useEffect(() => {
         const fetchArticles = async () => {
@@ -75,6 +77,4 @@ const Articles = ({ language }) => {
             </div>
         </div>
     );
-};
-
-export default Articles;
+}

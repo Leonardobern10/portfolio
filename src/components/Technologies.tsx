@@ -13,6 +13,7 @@ import { FaJava } from 'react-icons/fa';
 import { SiMysql } from 'react-icons/si';
 import { motion } from 'framer-motion';
 import { SECTIONS } from '../constants';
+import useLanguageStore from '../store/useLanguage';
 
 const iconVariants = (duration) => ({
     initial: { y: -10 },
@@ -22,12 +23,13 @@ const iconVariants = (duration) => ({
             duration: duration,
             ease: 'linear',
             repeat: Infinity,
-            repeatType: 'reverse',
+            repeatType: 'reverse' as const,
         },
     },
 });
 
-const Technologies = ({ language }) => {
+const Technologies = () => {
+    const { language } = useLanguageStore();
     return (
         <div className="border-b border-neutral-800 pb-24">
             <motion.h2

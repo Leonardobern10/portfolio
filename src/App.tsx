@@ -16,16 +16,7 @@ const styles = {
 };
 
 function App() {
-    const [currentLanguage, setCurrentLanguage] = useState('BR');
-
-    function changeLanguage() {
-        setCurrentLanguage((current) => (current === 'BR' ? 'EN' : 'BR'));
-    }
-
-    const viewLanguage = () => {
-        if (currentLanguage === 'BR') return 'EN';
-        return 'BR';
-    };
+    const [modal, setModal] = useState<boolean>(false);
 
     return (
         <div className={styles.container}>
@@ -33,13 +24,13 @@ function App() {
                 <div className={styles.div2}></div>
             </div>
             <div className={styles.body}>
-                <NavBar language={viewLanguage()} onClick={changeLanguage} />
-                <Hero language={currentLanguage} />
-                <About language={currentLanguage} />
-                <Technologies language={currentLanguage} />
-                <Projects language={currentLanguage} />
-                <Articles language={currentLanguage} />
-                <Contact language={currentLanguage} />
+                <NavBar />
+                <Hero />
+                <About />
+                <Technologies />
+                <Projects />
+                <Articles />
+                <Contact />
             </div>
         </div>
     );

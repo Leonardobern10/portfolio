@@ -2,9 +2,12 @@ import { motion } from 'framer-motion';
 import usePinnedProjects from '../hooks/usePinnedProjects';
 import ButtonLink from './ButtonLink';
 import { SECTIONS } from '../constants';
+import useLanguageStore from '../store/useLanguage';
+import { NavLink } from 'react-router';
 
-const Projects = ({ language }) => {
+export default function Projects() {
     const { projects, loading, error } = usePinnedProjects();
+    const { language } = useLanguageStore();
 
     if (loading) {
         return (
@@ -32,12 +35,12 @@ const Projects = ({ language }) => {
                 {SECTIONS.PROJECTS[language]}
             </motion.h2>
             <div>
-                {projects.map((project, index) => (
+                {projects.map((project) => (
                     <motion.div
                         whileInView={{ opacity: 1, x: 0 }}
                         initial={{ opacity: 0, x: -100 }}
                         transition={{ duration: 0.5 }}
-                        key={index}
+                        key={project.id}
                         className="mb-8 flex max-md:flex-col md:items-center flex-wrap md:justify-center md:gap-x-4 hover:shadow-red-400 rounded-2xl"
                     >
                         <motion.div
@@ -57,24 +60,25 @@ const Projects = ({ language }) => {
                                 />
                             </a>
                         </motion.div>
-                        <div className="w-full max-w-xl md:w-1/2 lg:w-3/4 p-8 rounded-2xl ">
-                            <h6 className="mb-2 font-smibold">
+                        <div className="w-full max-w-xl md:w-1/2 lg:w-3/4 py-8">
+                            <h4 className="mb-2 tracking-tight font-semibold">
                                 <a
                                     href={project.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    className="text-lg hover:text-pink-900"
                                 >
                                     {project.title}
                                 </a>
-                            </h6>
+                            </h4>
                             <p className="mb-4 text-justify text-neutral-400">
                                 {project.description}
                             </p>
-                            <div className="flex flex-row flex-wrap justify-start w-full">
+                            <div className="flex flex-row flex-wrap justify-start w-full gap-4">
                                 {project.technologies.map((tech, index) => (
                                     <span
                                         key={index}
-                                        className="w-fit m-2 rounded bg-neutral-900 px-3 py-1 font-medium text-pink-900 whitespace-nowrap"
+                                        className="w-fit rounded bg-neutral-800 px-3 py-1 font-medium text-pink-900 whitespace-nowrap border-2 border-pink-900/20"
                                     >
                                         {tech}
                                     </span>
@@ -83,16 +87,19 @@ const Projects = ({ language }) => {
                             <div className="flex flex-row items-center gap-x-4">
                                 {project.homepageUrl && (
                                     <ButtonLink
-                                        title="Ver site"
+                                        title="Site"
                                         href={project.homepageUrl}
                                     />
                                 )}
                                 {project.url && (
                                     <ButtonLink
-                                        title="Ver repositorio"
+                                        title="Github"
                                         href={project.url}
                                     />
                                 )}
+                                <NavLink to={`/project/${project.id}`}>
+                                    Mais informações
+                                </NavLink>
                             </div>
                         </div>
                     </motion.div>
@@ -113,6 +120,4 @@ const Projects = ({ language }) => {
             </div>
         </div>
     );
-};
-
-export default Projects;
+}

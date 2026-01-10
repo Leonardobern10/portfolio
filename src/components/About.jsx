@@ -1,15 +1,17 @@
 import aboutImg from '../assets/about.jpg';
 import { ABOUT_TEXT_CONTENT, SECTIONS } from '../constants';
 import { motion } from 'framer-motion';
+import useLanguageStore from '../store/useLanguage';
+import TitleSection from './TitleSection';
 
-const About = function ({ language }) {
+const styles = {};
+
+const About = function () {
+    const { language } = useLanguageStore();
     const titleSection = SECTIONS.ABOUT[language].split(' ');
     return (
         <div className="border-b border-neutral-900 pb-4">
-            <h1 className="my-20 text-center text-4xl">
-                {titleSection[0]}
-                <span className="text-neutral-500"> {titleSection[1]}</span>
-            </h1>
+            <TitleSection titleSection={titleSection} />
             <div className="flex flex-wrap gap-y-10">
                 <motion.div
                     whileInView={{ opacity: 1, x: 0 }}

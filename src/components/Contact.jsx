@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import { IoDocumentText } from 'react-icons/io5';
 import { SECTIONS } from '../constants';
+import useLanguageStore from '../store/useLanguage';
 
-function ContactForm({ language }) {
+function ContactForm() {
+    const { language } = useLanguageStore();
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',

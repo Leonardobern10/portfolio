@@ -1,6 +1,7 @@
 import { HERO_CONTENT } from '../constants';
 import profilePic from '../assets/kevinRushProfile.png';
 import { motion } from 'framer-motion';
+import useLanguageStore from '../store/useLanguage';
 
 const container = (delay) => ({
     hidden: { x: -100, opacity: 0 },
@@ -11,7 +12,8 @@ const container = (delay) => ({
     },
 });
 
-const Hero = ({ language }) => {
+export default function Hero() {
+    const { language } = useLanguageStore();
     return (
         <div className="border-b border-neutral-900 pb-4 lg:mb-35">
             <div className="flex flex-wrap">
@@ -59,6 +61,4 @@ const Hero = ({ language }) => {
             </div>
         </div>
     );
-};
-
-export default Hero;
+}
