@@ -41,7 +41,7 @@ export default function Hero() {
                             variants={container(1)}
                             initial="hidden"
                             animate="visible"
-                            className="my-2 max-w-xl py-8 font-light text-lg text-justify"
+                            className="my-2 max-w-xl py-8 font-light text-body text-justify"
                         >
                             {HERO_CONTENT[language]}
                         </motion.p>

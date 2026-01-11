@@ -10,8 +10,16 @@ const styles = {
     error: 'text-center text-red-500',
     container: 'border-b border-neutral-900 pb-4',
     titleSection: 'my-20 text-center text-4xl',
+    containerProjects:
+        'md:grid md:grid-cols-2 md:gap-10 md:place-items-center md:items-center',
     project:
         'mb-8 flex max-md:flex-col md:items-center flex-wrap md:justify-evenly md:gap-x-10 hover:shadow-red-400 rounded-2xl',
+    projectContent:
+        'flex flex-col w-full max-w-xl md:w-1/2 lg:w-3/4 py-8 gap-y-2',
+    projectTitle: 'mb-2 tracking-tight font-semibold',
+    projectLink:
+        'text-xl md:text-2xl hover:text-pink-900 tracking-wide font-rubik font-bold',
+    containerTopics: 'my-2',
     containerImg: 'w-full md:w-1/2 lg:w-1/4',
     img: 'mb-8 h-fit w-fit max-lg:w-full object-contain rounded hover:shadow-2xl hover:shadow-red-400',
 };
@@ -43,7 +51,7 @@ export default function Projects() {
             >
                 {SECTIONS.PROJECTS[language]}
             </motion.h2>
-            <div>
+            <div className={styles.containerProjects}>
                 {projects.map((project) => (
                     <motion.div
                         whileInView={{ opacity: 1, x: 0 }}
@@ -52,6 +60,7 @@ export default function Projects() {
                         key={project.id}
                         className={styles.project}
                     >
+                        {/*
                         <motion.div
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.95 }}
@@ -69,18 +78,20 @@ export default function Projects() {
                                 />
                             </a>
                         </motion.div>
-                        <div className="w-full max-w-xl md:w-1/2 lg:w-3/4 py-8">
-                            <h4 className="mb-2 tracking-tight font-semibold">
+                        
+                        */}
+                        <div className={styles.projectContent}>
+                            <h4 className={styles.projectTitle}>
                                 <a
                                     href={project.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-lg md:text-2xl hover:text-pink-900 tracking-wide font-rubik font-bold"
+                                    className={styles.projectLink}
                                 >
                                     {project.title.replaceAll('_', ' ')}
                                 </a>
                             </h4>
-                            <div className="my-2">
+                            <div className={styles.containerTopics}>
                                 {project.repositoryTopics && (
                                     <CarrouselAutoPlay
                                         repositoryTopics={
@@ -89,7 +100,7 @@ export default function Projects() {
                                     />
                                 )}
                             </div>
-                            <p className="md:text-lg mb-4 text-justify text-neutral-400">
+                            <p className="text-body mb-4 text-justify text-neutral-400">
                                 {project.description}
                             </p>
                             <div className="flex flex-row flex-wrap justify-start w-full gap-4">
