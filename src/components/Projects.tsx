@@ -3,7 +3,6 @@ import usePinnedProjects from '../hooks/usePinnedProjects';
 import ButtonLink from './ButtonLink';
 import { SECTIONS } from '../constants';
 import useLanguageStore from '../store/useLanguage';
-import { NavLink } from 'react-router';
 import CarrouselAutoPlay from './Carousel/CarrouselAutoPlay';
 
 const styles = {
@@ -33,8 +32,6 @@ export default function Projects() {
     if (error) {
         return <p className={styles.error}>{msgs.error}</p>;
     }
-
-    console.log(projects[0].repositoryTopics);
 
     return (
         <div className={styles.container}>
