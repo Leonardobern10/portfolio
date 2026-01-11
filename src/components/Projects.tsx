@@ -77,7 +77,7 @@ export default function Projects() {
                                     rel="noopener noreferrer"
                                     className="text-lg md:text-2xl hover:text-pink-900 tracking-wide font-rubik font-bold"
                                 >
-                                    {project.title.replace('_', ' ')}
+                                    {project.title.replaceAll('_', ' ')}
                                 </a>
                             </h4>
                             <div className="my-2">
