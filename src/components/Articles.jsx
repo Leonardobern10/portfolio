@@ -3,30 +3,15 @@ import { scrapMedium } from '../constants/articles';
 import { motion } from 'framer-motion';
 import { SECTIONS } from '../constants';
 import useLanguageStore from '../store/useLanguage';
+import TitleSectionAnimated from './TitleSections/TitleSectionAnimated';
+import { useArticles } from '../hooks/useArticles';
 
 export default function Articles() {
-    const [data, setData] = useState([]);
-    const { language } = useLanguageStore();
-
-    useEffect(() => {
-        const fetchArticles = async () => {
-            const articles = await scrapMedium(); // Aguarda os dados
-            setData(articles); // Armazena os dados no estado
-        };
-
-        fetchArticles(); // Chama a função ao carregar o componente
-    }, []);
+    const { data } = useArticles();
 
     return (
         <div className="pb-12 px-4 lg:px-8">
-            <motion.h2
-                whileInView={{ opacity: 1, y: 0 }}
-                initial={{ opacity: 0, y: -100 }}
-                transition={{ duration: 1.5 }}
-                className="my-20 text-center text-4xl"
-            >
-                {SECTIONS.ARTICLES[language]}
-            </motion.h2>
+            <TitleSectionAnimated titleSection={SECTIONS.ARTICLES} />
             <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-3">
                 {data ? (
                     data.map((article, index) => (

@@ -1,5 +1,5 @@
 import { HERO_CONTENT } from '../constants';
-import profilePic from '../assets/kevinRushProfile.png';
+import profilePic from '../assets/Eu_RJ.jpg';
 import { motion } from 'framer-motion';
 import useLanguageStore from '../store/useLanguage';
 
@@ -55,6 +55,7 @@ export default function Hero() {
                             transition={{ duration: 1, delay: 1.2 }}
                             src={profilePic}
                             alt="Image profile demo"
+                            className="rounded-2xl mask-[radial-gradient(circle,black_20%,transparent_70%)]"
                         />
                     </div>
                 </div>

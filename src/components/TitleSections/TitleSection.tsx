@@ -1,5 +1,5 @@
 type TitleSectionProps = {
-    titleSection: string;
+    titleSection: string[];
 };
 
 export default function TitleSection({ titleSection }: TitleSectionProps) {
