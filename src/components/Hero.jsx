@@ -55,7 +55,7 @@ export default function Hero() {
                             transition={{ duration: 1, delay: 1.2 }}
                             src={profilePic}
                             alt="Image profile demo"
-                            className="rounded-2xl mask-[radial-gradient(circle,black_20%,transparent_70%)]"
+                            className="rounded-4xl "
                         />
                     </div>
                 </div>

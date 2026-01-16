@@ -12,13 +12,12 @@ import TitleSectionAnimated from '../TitleSections/TitleSectionAnimated';
 const styles = {
     loading: 'text-center text-neutral-400',
     error: 'text-center text-red-500',
-    container: 'border-b border-neutral-900 pb-4',
-    containerProjects:
-        'md:grid md:grid-cols-2 md:gap-10 md:place-items-center md:items-center',
+    container: 'pb-4 w-full',
+    containerProjects: 'md:grid md:grid-cols-2 w-full md:gap-y-10 md:gap-x-30',
     project:
         'mb-8 flex max-md:flex-col md:items-center flex-wrap md:justify-evenly md:gap-x-10 hover:shadow-red-400 rounded-2xl',
     projectContent:
-        'flex flex-col w-full max-w-xl md:w-1/2 lg:w-3/4 py-8 gap-y-2',
+        'flex flex-col w-full max-w-xl md:w-1/2 lg:w-full py-8 gap-y-2',
 
     containerImg: 'w-full md:w-1/2 lg:w-1/4',
     img: 'mb-8 h-fit w-fit max-lg:w-full object-contain rounded hover:shadow-2xl hover:shadow-red-400',
