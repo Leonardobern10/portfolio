@@ -1,28 +1,12 @@
 import { articles, MEDIUM_URL } from '../../data/articlesData';
+import HeaderArticles from './HeaderArticles/HeaderArticles';
 
 export default function Articles() {
     return (
         <section id="writing" className="py-28">
             <div className="max-w-[1100px] mx-auto px-10">
                 {/* Header */}
-                <div className="mb-16 fade-in">
-                    <div className="flex items-center gap-3 mb-4">
-                        <span className="block w-5 h-px bg-accent" />
-                        <span className="font-mono-custom text-[11px] text-accent tracking-[0.12em] uppercase">
-                            Writing
-                        </span>
-                    </div>
-                    <h2 className="font-serif-custom text-4xl md:text-5xl font-light tracking-[-0.02em] leading-[1.1] mb-4">
-                        Thinking out loud
-                        <br />
-                        about engineering.
-                    </h2>
-                    <p className="text-[#888580] text-[16px] max-w-[520px] leading-[1.8]">
-                        I write about software engineering fundamentals and
-                        architecture on Medium — because understanding the "why"
-                        matters as much as knowing the "how."
-                    </p>
-                </div>
+                <HeaderArticles />
 
                 {/* Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/[0.06] fade-in">
