@@ -12,7 +12,7 @@ export default function Hero() {
             {/* Background glow */}
             <div className="pointer-events-none absolute top-0 right-[-20%] w-[60%] h-full bg-[radial-gradient(ellipse_at_70%_50%,rgba(232,255,71,0.04)_0%,transparent_60%)]" />
 
-            <div className="max-w-[1100px] mx-auto px-10 w-full pt-20">
+            <div className="max-w-275 mx-auto px-10 w-full pt-20">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     {/* Left */}
                     <div className="fade-in">
@@ -25,7 +25,7 @@ export default function Hero() {
 
                         <Title />
 
-                        <p className="text-[19px] text-[#888580] leading-[1.7] mb-10 max-w-[480px]">
+                        <p className="text-[19px] text-[#888580] leading-[1.7] mb-10 max-w-120">
                             Backend-focused engineer with hands-on experience in{' '}
                             <WordEmphasis word="microservices" />,{' '}
                             <WordEmphasis word="event-driven architecture" />,

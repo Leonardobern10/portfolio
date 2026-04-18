@@ -1,8 +1,8 @@
 export default function ArchitectureExample() {
     return (
         <div className="flex flex-col justify-center">
-            <div className="bg-[#0a0a0b] border border-white/[0.09] rounded p-6 font-mono-custom text-[12px] leading-[2] text-[#888580]">
-                <p className="text-[10px] text-[#555250] uppercase tracking-[0.1em] mb-3">
+            <div className="bg-[#0a0a0b] border border-white/9 rounded p-6 font-mono-custom text-[12px] leading-loose text-[#888580]">
+                <p className="text-[10px] text-[#555250] uppercase tracking-widest mb-3">
                     Architecture
                 </p>
                 <div>┌─────────────────┐</div>

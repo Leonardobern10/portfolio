@@ -11,12 +11,12 @@ export default function Projects() {
         <section id="projects" className="py-28 bg-[#111113]">
             <HeaderCardProject title="Projects" desc="Things I've built." />
 
-            <div className="max-w-[1100px] mx-auto px-10">
+            <div className="max-w-275 mx-auto px-10">
                 {/* Featured */}
                 <FeaturedProject project={featured} />
 
                 {/* Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 border-l border-white/[0.06]">
+                <div className="grid grid-cols-1 md:grid-cols-2 border-l border-white/6">
                     {rest.map((p, i) => (
                         <CardProject key={p.num} project={p} delay={i * 50} />
                     ))}

@@ -5,8 +5,8 @@ import HeaderCard from './HeaderCard';
 
 export default function AvailabilityCard() {
     return (
-        <div className="fade-in [transition-delay:100ms]">
-            <div className="bg-[#18181c] border border-white/[0.09] rounded p-8">
+        <div className="fade-in delay-100">
+            <div className="bg-[#18181c] border border-white/9 rounded p-8">
                 <HeaderCard title="Available now" />
 
                 <ContentAvailability data={availability} />

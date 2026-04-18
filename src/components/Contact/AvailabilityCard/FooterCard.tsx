@@ -5,7 +5,7 @@ type FooterCardProps = {
 
 export default function FooterCard({ title, content }: FooterCardProps) {
     return (
-        <div className="border-t border-white/[0.06] pt-6">
+        <div className="border-t border-white/6 pt-6">
             <p className="font-mono-custom text-[11px] text-[#555250] uppercase tracking-wide mb-1">
                 {title}
             </p>
