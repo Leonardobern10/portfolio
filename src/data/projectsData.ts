@@ -1,0 +1,65 @@
+import type { Project } from '../types/ProjectType';
+
+export const projects: Project[] = [
+    {
+        num: '01',
+        type: 'Featured',
+        title: 'TaskLy — Collaborative Task Platform',
+        desc: 'A full microservices platform where each domain — auth, tasks, comments, notifications — runs as an independent service with its own data and deployment boundary. Built in 14 days, from architecture planning to documentation.',
+        decision:
+            'RabbitMQ for async event delivery (tasks.created, comment.new) to decouple the notification pipeline from the request lifecycle. QueryBuilder over repository.find() for composable, dynamic filtering.',
+        stack: [
+            'NestJS',
+            'TypeScript',
+            'RabbitMQ',
+            'PostgreSQL',
+            'WebSockets',
+            'JWT',
+            'Turborepo',
+            'Docker',
+        ],
+        github: 'https://github.com/Leonardobern10/TaskLy',
+        featured: true,
+    },
+    {
+        num: '02',
+        type: 'Mobile',
+        title: 'PillOnTime',
+        desc: 'Mobile app that helps users manage medications and never miss a dose. Automatic dose calculation, push notifications, usage history, and offline-first SQLite persistence.',
+        stack: ['React Native', 'TypeScript', 'Expo', 'SQLite'],
+        github: 'https://github.com/Leonardobern10/Pill_On_Time',
+    },
+    {
+        num: '03',
+        type: 'Full-stack',
+        title: 'E-commerce System',
+        desc: 'Full e-commerce system with Vue.js frontend and Node.js backend — user management, product catalog, shopping cart, order flow, and JWT authentication.',
+        stack: ['Vue.js', 'Node.js', 'MongoDB', 'Express', 'JWT'],
+        github: 'https://github.com/Leonardobern10',
+    },
+    {
+        num: '04',
+        type: 'API',
+        title: 'Expense Management API',
+        desc: 'RESTful API built with Spring Boot for personal finance management — expense tracking, debt control, category-based limits, and JWT-based authentication.',
+        stack: ['Java', 'Spring Boot', 'MongoDB', 'Docker', 'JWT'],
+        github: 'https://github.com/Leonardobern10',
+    },
+    {
+        num: '05',
+        type: 'Backend',
+        title: 'Car Management System',
+        desc: 'Full CRUD application for vehicle management with Spring Boot and JPA — pagination, Swagger documentation, and JUnit test coverage.',
+        stack: ['Java', 'Spring Boot', 'PostgreSQL', 'JPA', 'Swagger', 'JUnit'],
+        github: 'https://github.com/Leonardobern10',
+    },
+    {
+        num: '06',
+        type: 'Frontend',
+        title: 'Locale Travel',
+        desc: 'Responsive, accessible landing page built with React + TypeScript, Vite, TailwindCSS, and shadcn/ui — focused on component architecture and UI best practices.',
+        stack: ['React', 'TypeScript', 'TailwindCSS', 'Vite', 'shadcn/ui'],
+        github: 'https://github.com/Leonardobern10',
+        live: 'https://portfolio-leonardo25.vercel.app',
+    },
+];
