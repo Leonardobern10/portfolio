@@ -1,4 +1,8 @@
-export const articles = [
+import type { Articles } from '../types/ArticlesType';
+
+export const MEDIUM_URL = 'https://medium.com/@leonardo.bernardo2658';
+
+export const articles: Articles[] = [
     {
         title: 'Observability: Beyond Logs and Metrics',
         tags: ['observability', 'full-stack'],
