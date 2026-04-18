@@ -1,66 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&family=DM+Sans:wght@300;400;500&display=swap');
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
-  --accent: #e8ff47;
-  --accent2: #47ffd8;
-  --mono: 'DM Mono', monospace;
-  --serif: 'Fraunces', serif;
-  --sans: 'DM Sans', sans-serif;
+    --accent: #e8ff47;
+    --accent2: #47ffd8;
+    --mono: 'DM Mono', monospace;
+    --serif: 'Fraunces', serif;
+    --sans: 'DM Sans', sans-serif;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: var(--sans);
+    font-family: var(--sans);
 }
 
-/* Fade-in animation */
+/* Fade-in animation t */
 .fade-in {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
 }
 
 .fade-in.visible {
-  opacity: 1;
-  transform: none;
+    opacity: 1;
+    transform: none;
 }
 
 /* Fonts */
-.font-mono-custom { font-family: var(--mono); }
-.font-serif-custom { font-family: var(--serif); }
+.font-mono-custom {
+    font-family: var(--mono);
+}
+.font-serif-custom {
+    font-family: var(--serif);
+}
 
 /* Accent colors */
-.text-accent { color: var(--accent); }
-.text-accent2 { color: var(--accent2); }
-.border-accent { border-color: var(--accent); }
-.border-accent2 { border-color: var(--accent2); }
-.bg-accent { background-color: var(--accent); }
+.text-accent {
+    color: var(--accent);
+}
+.text-accent2 {
+    color: var(--accent2);
+}
+.border-accent {
+    border-color: var(--accent);
+}
+.border-accent2 {
+    border-color: var(--accent2);
+}
+.bg-accent {
+    background-color: var(--accent);
+}
 
 /* Pulse animation for availability dot */
 @keyframes pulse-dot {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.4; }
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.4;
+    }
 }
 
 .pulse-dot {
-  animation: pulse-dot 2s infinite;
+    animation: pulse-dot 2s infinite;
 }
 
 /* Skill tag hover */
 .skill-tag {
-  transition: border-color 0.2s, color 0.2s;
+    transition:
+        border-color 0.2s,
+        color 0.2s;
 }
 
 .skill-tag:hover {
-  border-color: var(--accent2);
-  color: var(--accent2);
+    border-color: var(--accent2);
+    color: var(--accent2);
 }
 
 .skill-tag-highlight {
-  border-color: var(--accent) !important;
-  color: var(--accent) !important;
+    border-color: var(--accent) !important;
+    color: var(--accent) !important;
 }
