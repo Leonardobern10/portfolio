@@ -1,6 +1,4 @@
 import { projects } from '../../data/projectsData';
-import DescriptionSection from '../DescriptionSection';
-import TitleSection from '../TitleSection';
 import CardProject from './CardProject/CardProject';
 import HeaderCardProject from './CardProject/HeaderCardProject';
 import FeaturedProject from './FeaturedProject/FeaturedProject';
