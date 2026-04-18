@@ -2,8 +2,7 @@ export default function Hero() {
     return (
         <section
             id="hero"
-            className="relative min-h-screen flex items-center overflow-hidden"
-        >
+            className="relative min-h-screen flex items-center overflow-hidden">
             {/* Background glow */}
             <div className="pointer-events-none absolute top-0 right-[-20%] w-[60%] h-full bg-[radial-gradient(ellipse_at_70%_50%,rgba(232,255,71,0.04)_0%,transparent_60%)]" />
 
@@ -45,14 +44,12 @@ export default function Hero() {
                         <div className="flex gap-4 flex-wrap">
                             <a
                                 href="#projects"
-                                className="font-mono-custom text-[13px] text-[#0a0a0b] bg-accent px-8 py-3.5 rounded-sm tracking-wide hover:opacity-85 transition-opacity"
-                            >
+                                className="font-mono-custom text-[13px] text-[#0a0a0b] bg-accent px-8 py-3.5 rounded-sm tracking-wide hover:opacity-85 transition-opacity">
                                 View Projects
                             </a>
                             <a
                                 href="#contact"
-                                className="font-mono-custom text-[13px] text-[#f0ede8] border border-white/[0.15] px-8 py-3.5 rounded-sm tracking-wide hover:border-white transition-colors"
-                            >
+                                className="font-mono-custom text-[13px] text-[#f0ede8] border border-white/[0.15] px-8 py-3.5 rounded-sm tracking-wide hover:border-white transition-colors">
                                 Get in Touch
                             </a>
                         </div>
@@ -114,8 +111,7 @@ export default function Hero() {
                                         i === 0
                                             ? 'border-accent text-accent'
                                             : 'border-white/[0.09] text-[#888580]'
-                                    }`}
-                                >
+                                    }`}>
                                     {b}
                                 </span>
                             ))}
