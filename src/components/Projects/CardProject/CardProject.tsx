@@ -15,7 +15,7 @@ type CardProjectProps = {
 export default function CardProject({ project, delay }: CardProjectProps) {
     return (
         <div
-            className="bg-[#111113] p-10 hover:bg-[#18181c] transition-colors fade-in border-b border-r border-white/[0.06] last:border-r-0"
+            className="bg-[#111113] p-10 hover:bg-[#18181c] transition-colors fade-in border-b border-r border-white/6 last:border-r-0"
             style={{ transitionDelay: `${delay}ms` }}>
             <div className="flex justify-between items-center mb-5">
                 <ProjectNumber num={project.num} />

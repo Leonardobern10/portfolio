@@ -15,7 +15,7 @@ type FeaturedProjectProps = {
 
 export default function FeaturedProject({ project }: FeaturedProjectProps) {
     return (
-        <div className="bg-[#111113] p-10 grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-12 border-b border-white/[0.06] fade-in">
+        <div className="bg-[#111113] p-10 grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-12 border-b border-white/6 fade-in">
             <div>
                 <div className="flex justify-between items-center mb-5">
                     <ProjectNumber num={project.num} />
