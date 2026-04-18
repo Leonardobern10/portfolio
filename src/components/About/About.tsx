@@ -1,25 +1,23 @@
-import { SECTIONS } from '../../constants';
-import useLanguageStore from '../../store/useLanguage';
-import TitleSection from '../TitleSections/TitleSection';
-import AboutImg from './AboutImg';
-import AboutText from './AboutText';
+import { statsData } from "../../data/statsData";
+import HeaderAbout from "./HeaderAbout";
+import PresentationSkills from "./PresentationSkills";
+import Stats from "./Stats/Stats";
 
-const styles = {
-    container: 'border-b border-neutral-900 pb-4',
-    content: 'flex flex-wrap gap-y-10',
-};
+export default function About() {
+  return (
+    <section id="about" className="py-28">
+      <div className="max-w-[1100px] mx-auto px-10">
+        {/* Header */}
+        <HeaderAbout />
 
-const About = function () {
-    const { language } = useLanguageStore();
-    const titleSection = SECTIONS.ABOUT[language].split(' ');
-    return (
-        <div className={styles.container}>
-            <TitleSection titleSection={titleSection} />
-            <div className={styles.content}>
-                <AboutImg />
-                <AboutText />
-            </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-start">
+          {/* Left — Text + Skills */}
+          <PresentationSkills />
+
+          {/* Right — Stats */}
+          <Stats data={statsData} />
         </div>
-    );
-};
-export default About;
+      </div>
+    </section>
+  );
+}
