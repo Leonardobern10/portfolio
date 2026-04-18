@@ -37,12 +37,12 @@ export default function Contact() {
                     <div className="flex flex-wrap justify-start gap-x-4">
                         <ButtonLink
                             title="Download my Resume"
-                            href="public/DEV_FULLSTACK_LEONARDOBERNARDO_EN.pdf"
+                            href="/DEV_FULLSTACK_LEONARDOBERNARDO_EN.pdf"
                             download
                         />
                         <ButtonLink
                             title="Baixe meu Curriculo"
-                            href="public/DEV_FULLSTACK_LEONARDOBERNARDO.pdf"
+                            href="/DEV_FULLSTACK_LEONARDOBERNARDO.pdf"
                             download
                         />
                     </div>
