@@ -5,7 +5,7 @@ import ProfileStatus from './ProfileStatus';
 import RunCommand from './RunCommand';
 import ServiceItem from './ServiceItem';
 
-const dotColors = ['#ff5f57', '#febc2e', '#28c840'];
+const dotColors = ['#ff0000', '#ffff00', '#00ff00'];
 const profileStatus = ['Open to work', 'Remote friendly', 'Brazil · UTC-3'];
 
 export default function Terminal() {
