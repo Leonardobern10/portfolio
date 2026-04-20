@@ -1,10 +1,12 @@
+import { heroAnimateVariants } from '../../../animations';
 import DescriptionSection from '../../DescriptionSection';
 import TitleSection from '../../TitleSection';
 import TextHeaderArticles from './TextHeaderArticles';
+import { motion } from 'motion/react';
 
 export default function HeaderArticles() {
     return (
-        <div className="mb-16 fade-in">
+        <motion.div {...heroAnimateVariants} className="mb-16">
             <TitleSection title="Writing" />
             <DescriptionSection
                 beforeBreak="Thinking out loud"
@@ -15,6 +17,6 @@ export default function HeaderArticles() {
             Medium — because understanding the "why" matters as much as knowing
             the "how."'
             />
-        </div>
+        </motion.div>
     );
 }

@@ -1,7 +1,12 @@
+import {
+    containerListAnimationVariants,
+    heroAnimateVariants,
+} from '../../animations';
 import { articles } from '../../data/articlesData';
 import ArticleItem from './ArticleItem/ArticleItem';
 import FooterArticles from './FooterArticles/FooterArticles';
 import HeaderArticles from './HeaderArticles/HeaderArticles';
+import { motion } from 'motion/react';
 
 export default function Articles() {
     return (
@@ -11,7 +16,10 @@ export default function Articles() {
                 <HeaderArticles />
 
                 {/* Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/6 fade-in">
+                <motion.div
+                    {...heroAnimateVariants}
+                    variants={containerListAnimationVariants}
+                    className="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/6">
                     {articles.map((article) => (
                         <ArticleItem
                             tags={article.tags}
@@ -19,7 +27,7 @@ export default function Articles() {
                             key={article.title}
                         />
                     ))}
-                </div>
+                </motion.div>
 
                 {/* CTA */}
                 <FooterArticles />

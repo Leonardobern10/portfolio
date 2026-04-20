@@ -1,10 +1,14 @@
+import { heroAnimateVariants } from '../../../animations';
 import { MEDIUM_URL } from '../../../data/articlesData';
 import ButtonLink from '../../ButtonLink';
+import { motion } from 'motion/react';
 
 export default function FooterArticles() {
     return (
-        <div className="mt-8 text-center fade-in">
+        <motion.div
+            {...heroAnimateVariants}
+            className="mt-8 text-center fade-in">
             <ButtonLink title="All articles on Medium →" href={MEDIUM_URL} />
-        </div>
+        </motion.div>
     );
 }

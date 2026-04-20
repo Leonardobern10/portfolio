@@ -1,3 +1,4 @@
+import { heroAnimateVariants } from '../../animations';
 import { contactLinks } from '../../data/contactLinksData';
 import ButtonLink from '../ButtonLink';
 import AvailabilityCard from './AvailabilityCard/AvailabilityCard';
@@ -5,6 +6,8 @@ import ContactLinks from './ContactLinks/ContactLinks';
 import Glow from './Glow';
 import InviteContact from './InviteContact';
 import InviteText from './InviteText';
+import { motion } from 'motion/react';
+
 export default function Contact() {
     return (
         <section
@@ -16,7 +19,7 @@ export default function Contact() {
             <div className="max-w-275 mx-auto px-10 relative">
                 <div className="grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-20 items-start">
                     {/* Left */}
-                    <div className="fade-in">
+                    <motion.div {...heroAnimateVariants}>
                         <InviteContact
                             beforeBreak="Let's build"
                             afterBreak="something"
@@ -30,7 +33,7 @@ export default function Contact() {
                         />
 
                         <ContactLinks contactLinks={contactLinks} />
-                    </div>
+                    </motion.div>
 
                     {/* Right — Availability card */}
                     <AvailabilityCard />

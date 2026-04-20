@@ -1,8 +1,10 @@
+import { heroAnimateVariants } from '../../animations';
 import ButtonMain from '../ButtonMain';
 import ButtonSecondary from '../ButtonSecondary';
 import Terminal from './Terminal';
 import Title from './Title';
 import WordEmphasis from './WordEmphasis';
+import { motion } from 'motion/react';
 
 export default function Hero() {
     return (
@@ -15,7 +17,8 @@ export default function Hero() {
             <div className="max-w-275 mx-auto px-10 w-full pt-20">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     {/* Left */}
-                    <div className="fade-in">
+
+                    <motion.div {...heroAnimateVariants}>
                         <div className="flex items-center gap-3 mb-6">
                             <span className="block w-10 h-px bg-accent" />
                             <span className="font-mono-custom text-[12px] text-accent tracking-[0.12em] uppercase">
@@ -40,7 +43,7 @@ export default function Hero() {
                                 href="#contact"
                             />
                         </div>
-                    </div>
+                    </motion.div>
 
                     {/* Right — Terminal */}
                     <Terminal />
