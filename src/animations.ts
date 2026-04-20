@@ -14,6 +14,7 @@ export const containerListAnimationVariants = {
     visible: {
         transition: {
             staggerChildren: 0.3, // delay entre cada item
+            delayChildren: 0.1, // delay antes de começar a animar os itens
         },
     },
 };
