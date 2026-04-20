@@ -15,7 +15,7 @@ export default function Skills({ skills }: SkillsProps) {
             variants={containerListAnimationVariants}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true }}
+            viewport={{ once: false, margin: '-100px' }}
             className="space-y-6">
             {skills.map((group) => (
                 <motion.div

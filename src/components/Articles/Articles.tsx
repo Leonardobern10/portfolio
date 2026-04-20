@@ -17,8 +17,10 @@ export default function Articles() {
 
                 {/* Grid */}
                 <motion.div
-                    {...heroAnimateVariants}
                     variants={containerListAnimationVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: false, margin: '-100px' }}
                     className="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/6">
                     {articles.map((article) => (
                         <ArticleItem

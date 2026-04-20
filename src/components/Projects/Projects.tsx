@@ -1,7 +1,9 @@
+import { containerListAnimationVariants } from '../../animations';
 import { projects } from '../../data/projectsData';
 import CardProject from './CardProject/CardProject';
 import HeaderCardProject from './CardProject/HeaderCardProject';
 import FeaturedProject from './FeaturedProject/FeaturedProject';
+import { motion } from 'motion/react';
 
 export default function Projects() {
     const featured = projects.find((p) => p.featured)!;
@@ -16,11 +18,16 @@ export default function Projects() {
                 <FeaturedProject project={featured} />
 
                 {/* Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 border-l border-white/6">
-                    {rest.map((p, i) => (
-                        <CardProject key={p.num} project={p} delay={i * 50} />
+                <motion.div
+                    variants={containerListAnimationVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: false, margin: '-100px' }}
+                    className="grid grid-cols-1 md:grid-cols-2 border-l border-white/6">
+                    {rest.map((p) => (
+                        <CardProject key={p.num} project={p} />
                     ))}
-                </div>
+                </motion.div>
             </div>
         </section>
     );
