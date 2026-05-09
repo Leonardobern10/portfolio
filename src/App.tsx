@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Nav from './components/NavBar/Nav';
 import About from './components/About/About';
 import Articles from './components/Articles/Articles';
@@ -7,9 +7,16 @@ import Footer from './components/Footer/Footer';
 import Hero from './components/Hero/Hero';
 import Projects from './components/Projects/Projects';
 import getMedium from './service/getMedium';
+import type { ArticleMedium } from './types/ArticlesType';
 
 export default function App() {
+    const [articles, setArticles] = useState<ArticleMedium[]>();
     useEffect(() => {
+        const get = async () => {
+            const data = await getMedium();
+            setArticles(data);
+        };
+        get();
         const obs = new IntersectionObserver(
             (entries) => {
                 entries.forEach((e) => {
@@ -31,7 +38,7 @@ export default function App() {
             <div className="h-px bg-white/6" />
             <Projects />
             <div className="h-px bg-white/6" />
-            <Articles />
+            <Articles articles={articles!} />
             <div className="h-px bg-white/6" />
             <Contact />
             <Footer />

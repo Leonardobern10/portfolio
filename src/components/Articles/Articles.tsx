@@ -1,24 +1,15 @@
-import { useEffect, useState } from 'react';
-import {
-    containerListAnimationVariants,
-    heroAnimateVariants,
-} from '../../animations';
+import { containerListAnimationVariants } from '../../animations';
 import ArticleItem from './ArticleItem/ArticleItem';
 import FooterArticles from './FooterArticles/FooterArticles';
 import HeaderArticles from './HeaderArticles/HeaderArticles';
 import { motion } from 'motion/react';
 import type { ArticleMedium } from '../../types/ArticlesType';
-import getMedium from '../../service/getMedium';
 
-export default function Articles() {
-    const [articles, setArticles] = useState<ArticleMedium[]>();
-    useEffect(() => {
-        const get = async () => {
-            const data = await getMedium();
-            setArticles(data);
-        };
-        get();
-    }, []);
+type ArticleProps = {
+    articles: ArticleMedium[];
+};
+
+export default function Articles({ articles }: ArticleProps) {
     return (
         <section id="writing" className="py-28">
             <div className="max-w-275 mx-auto px-10">

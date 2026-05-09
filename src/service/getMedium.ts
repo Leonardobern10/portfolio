@@ -1,4 +1,3 @@
-import axios from 'axios';
 import type { ArticleMedium } from '../types/ArticlesType';
 
 const url = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@leonardo.bernardo2658`;
