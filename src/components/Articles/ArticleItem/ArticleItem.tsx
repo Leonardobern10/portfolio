@@ -7,10 +7,15 @@ import { motion } from 'motion/react';
 
 type ArticleItemProps = {
     title: string;
-    tags: string[];
+    categories: string[];
+    link: string;
 };
 
-export default function ArticleItem({ title, tags }: ArticleItemProps) {
+export default function ArticleItem({
+    title,
+    categories,
+    link,
+}: ArticleItemProps) {
     return (
         <motion.a
             variants={itemListAnimationVariants}
@@ -18,9 +23,9 @@ export default function ArticleItem({ title, tags }: ArticleItemProps) {
             target="_blank"
             rel="noreferrer"
             className="bg-[#0a0a0b] p-8 hover:bg-[#18181c] transition-colors group block">
-            <ContainerTags tags={tags} />
+            <ContainerTags tags={categories} />
             <ArticleTitle title={title} />
-            <Link text="Read on Medium →" />
+            <Link href={link} text="Read on Medium →" />
         </motion.a>
     );
 }
