@@ -8,8 +8,8 @@ export const contactLinks: ContactLink[] = [
     },
     {
         label: 'LinkedIn',
-        value: 'linkedin.com/in/leonardo-bern',
-        href: 'https://linkedin.com/in/leonardo-bern',
+        value: 'linkedin.com/in/leonardobernardo-dev',
+        href: 'https://www.linkedin.com/in/leonardobernardo-dev/',
     },
     {
         label: 'GitHub',
